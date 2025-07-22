@@ -7578,3 +7578,444 @@
 2025-07-22 11:37:54,012 - INFO - Face detected - proceeding with verification
 2025-07-22 11:37:54,016 - INFO - Request req_59_da174c97 queued (position: 1)
 2025-07-22 11:37:54,017 - INFO - System status: 3 active, 1 pending requests
+2025-07-22 11:37:56,491 - INFO - Face detected - proceeding with verification
+2025-07-22 11:37:56,493 - INFO - Request req_60_845add15 queued (position: 2)
+2025-07-22 11:37:56,494 - INFO - System status: 3 active, 2 pending requests
+2025-07-22 11:38:01,232 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:01,232 - INFO - Request req_61_b956ffe6 queued (position: 3)
+2025-07-22 11:38:01,232 - INFO - System status: 3 active, 3 pending requests
+2025-07-22 11:38:03,710 - INFO - System Statistics:
+2025-07-22 11:38:03,711 - INFO -   Total captures: 78
+2025-07-22 11:38:03,711 - INFO -   Faces detected: 61
+2025-07-22 11:38:03,712 - INFO -   API calls made: 59
+2025-07-22 11:38:03,713 - INFO -   API calls saved: 17
+2025-07-22 11:38:03,714 - INFO -   Efficiency: 21.8% calls saved
+2025-07-22 11:38:03,714 - INFO -   Frames streamed: 0
+2025-07-22 11:38:06,037 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:06,037 - INFO - Request req_62_85c04f6e queued (position: 4)
+2025-07-22 11:38:06,038 - INFO - System status: 3 active, 4 pending requests
+2025-07-22 11:38:08,625 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:08,627 - INFO - Request req_63_dac1d991 queued (position: 5)
+2025-07-22 11:38:08,627 - INFO - System status: 3 active, 5 pending requests
+2025-07-22 11:38:10,101 - INFO - Request req_57_69a2d03c completed in 21.08s
+2025-07-22 11:38:10,103 - WARNING - Request req_57_69a2d03c failed with status 429
+2025-07-22 11:38:10,105 - INFO - Request req_57_69a2d03c processed in 21.08s total
+2025-07-22 11:38:10,105 - WARNING - Verification failed - no result
+2025-07-22 11:38:10,106 - INFO - Request req_59_da174c97 started from queue (waited 16.09s)
+2025-07-22 11:38:10,106 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:10,108 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:10,116 - INFO - Request req_59_da174c97 starting API call
+2025-07-22 11:38:10,132 - INFO - Request req_58_ded5a92c completed in 18.61s
+2025-07-22 11:38:10,132 - WARNING - Request req_58_ded5a92c failed with status 429
+2025-07-22 11:38:10,150 - INFO - Request req_59_da174c97 completed in 0.03s
+2025-07-22 11:38:10,151 - WARNING - Request req_59_da174c97 failed with status 429
+2025-07-22 11:38:10,207 - INFO - Request req_58_ded5a92c processed in 18.68s total
+2025-07-22 11:38:10,207 - WARNING - Verification failed - no result
+2025-07-22 11:38:10,208 - INFO - Request req_59_da174c97 processed in 0.10s total
+2025-07-22 11:38:10,210 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:10,211 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:10,211 - WARNING - Verification failed - no result
+2025-07-22 11:38:10,212 - INFO - Request req_60_845add15 started from queue (waited 13.72s)
+2025-07-22 11:38:10,212 - INFO - Request req_60_845add15 starting API call
+2025-07-22 11:38:10,212 - INFO - Request req_61_b956ffe6 started from queue (waited 8.98s)
+2025-07-22 11:38:10,213 - INFO - Request req_61_b956ffe6 starting API call
+2025-07-22 11:38:10,219 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:10,219 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:10,225 - INFO - Request req_60_845add15 completed in 0.01s
+2025-07-22 11:38:10,228 - WARNING - Request req_60_845add15 failed with status 429
+2025-07-22 11:38:10,239 - INFO - Request req_61_b956ffe6 completed in 0.03s
+2025-07-22 11:38:10,243 - WARNING - Request req_61_b956ffe6 failed with status 429
+2025-07-22 11:38:10,314 - INFO - Request req_60_845add15 processed in 0.10s total
+2025-07-22 11:38:10,316 - WARNING - Verification failed - no result
+2025-07-22 11:38:10,317 - INFO - Request req_61_b956ffe6 processed in 0.10s total
+2025-07-22 11:38:10,326 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:10,327 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:10,327 - WARNING - Verification failed - no result
+2025-07-22 11:38:10,327 - INFO - Request req_62_85c04f6e started from queue (waited 4.29s)
+2025-07-22 11:38:10,328 - INFO - Request req_62_85c04f6e starting API call
+2025-07-22 11:38:10,329 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:10,334 - INFO - Request req_63_dac1d991 started from queue (waited 1.71s)
+2025-07-22 11:38:10,337 - INFO - Request req_63_dac1d991 starting API call
+2025-07-22 11:38:10,339 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:10,373 - INFO - Request req_62_85c04f6e completed in 0.04s
+2025-07-22 11:38:10,373 - WARNING - Request req_62_85c04f6e failed with status 429
+2025-07-22 11:38:10,392 - INFO - Request req_63_dac1d991 completed in 0.06s
+2025-07-22 11:38:10,393 - WARNING - Request req_63_dac1d991 failed with status 429
+2025-07-22 11:38:10,435 - INFO - Request req_62_85c04f6e processed in 0.11s total
+2025-07-22 11:38:10,436 - WARNING - Verification failed - no result
+2025-07-22 11:38:10,436 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:10,436 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:10,438 - INFO - Request req_63_dac1d991 processed in 0.10s total
+2025-07-22 11:38:10,445 - WARNING - Verification failed - no result
+2025-07-22 11:38:10,446 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:10,447 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:11,235 - INFO - Request req_56_3156fa2b completed in 24.61s
+2025-07-22 11:38:11,235 - WARNING - Request req_56_3156fa2b failed with status 500
+2025-07-22 11:38:11,251 - INFO - Request req_56_3156fa2b processed in 24.62s total
+2025-07-22 11:38:11,252 - WARNING - Verification failed - no result
+2025-07-22 11:38:11,253 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:11,254 - WARNING - TTS queue was full, cleared old messages
+2025-07-22 11:38:11,254 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:15,705 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:15,706 - INFO - Request req_64_8030bf58 submitted immediately
+2025-07-22 11:38:15,707 - INFO - System status: 1 active, 0 pending requests
+2025-07-22 11:38:15,706 - INFO - Request req_64_8030bf58 starting API call
+2025-07-22 11:38:18,058 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:18,068 - INFO - Request req_65_8e812088 submitted immediately
+2025-07-22 11:38:18,068 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 11:38:18,069 - INFO - Request req_65_8e812088 starting API call
+2025-07-22 11:38:20,405 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:20,408 - INFO - Request req_66_cdd9c554 submitted immediately
+2025-07-22 11:38:20,408 - INFO - System status: 3 active, 0 pending requests
+2025-07-22 11:38:20,417 - INFO - Request req_66_cdd9c554 starting API call
+2025-07-22 11:38:22,816 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:22,825 - INFO - Request req_67_d7bb16b0 queued (position: 1)
+2025-07-22 11:38:22,827 - INFO - System status: 3 active, 1 pending requests
+2025-07-22 11:38:25,302 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:25,302 - INFO - Request req_68_ec35f76c queued (position: 2)
+2025-07-22 11:38:25,302 - INFO - System status: 3 active, 2 pending requests
+2025-07-22 11:38:27,719 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:27,719 - INFO - Request req_69_17ef08ba queued (position: 3)
+2025-07-22 11:38:27,719 - INFO - System status: 3 active, 3 pending requests
+2025-07-22 11:38:29,369 - INFO - Request req_65_8e812088 completed in 11.30s
+2025-07-22 11:38:29,373 - WARNING - Request req_65_8e812088 failed with status 429
+2025-07-22 11:38:29,433 - INFO - Request req_65_8e812088 processed in 11.37s total
+2025-07-22 11:38:29,436 - WARNING - Verification failed - no result
+2025-07-22 11:38:29,436 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:29,439 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:29,443 - INFO - Request req_66_cdd9c554 completed in 9.03s
+2025-07-22 11:38:29,444 - WARNING - Request req_66_cdd9c554 failed with status 429
+2025-07-22 11:38:29,447 - INFO - Request req_67_d7bb16b0 started from queue (waited 6.62s)
+2025-07-22 11:38:29,449 - INFO - Request req_67_d7bb16b0 starting API call
+2025-07-22 11:38:29,467 - INFO - Request req_67_d7bb16b0 completed in 0.02s
+2025-07-22 11:38:29,467 - WARNING - Request req_67_d7bb16b0 failed with status 429
+2025-07-22 11:38:29,547 - INFO - Request req_66_cdd9c554 processed in 9.14s total
+2025-07-22 11:38:29,548 - WARNING - Verification failed - no result
+2025-07-22 11:38:29,548 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:29,548 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:29,553 - INFO - Request req_67_d7bb16b0 processed in 0.11s total
+2025-07-22 11:38:29,554 - WARNING - Verification failed - no result
+2025-07-22 11:38:29,554 - INFO - Request req_68_ec35f76c started from queue (waited 4.25s)
+2025-07-22 11:38:29,554 - INFO - Request req_68_ec35f76c starting API call
+2025-07-22 11:38:29,556 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:29,559 - INFO - Request req_69_17ef08ba started from queue (waited 1.84s)
+2025-07-22 11:38:29,559 - INFO - Request req_69_17ef08ba starting API call
+2025-07-22 11:38:29,560 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:29,570 - INFO - Request req_68_ec35f76c completed in 0.02s
+2025-07-22 11:38:29,574 - WARNING - Request req_68_ec35f76c failed with status 429
+2025-07-22 11:38:29,576 - INFO - Request req_69_17ef08ba completed in 0.02s
+2025-07-22 11:38:29,577 - WARNING - Request req_69_17ef08ba failed with status 429
+2025-07-22 11:38:29,660 - INFO - Request req_68_ec35f76c processed in 0.11s total
+2025-07-22 11:38:29,662 - WARNING - Verification failed - no result
+2025-07-22 11:38:29,662 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:29,662 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:29,663 - INFO - Request req_69_17ef08ba processed in 0.10s total
+2025-07-22 11:38:29,664 - WARNING - Verification failed - no result
+2025-07-22 11:38:29,664 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:29,665 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:30,028 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:30,031 - INFO - Request req_70_a806a4b4 submitted immediately
+2025-07-22 11:38:30,032 - INFO - Request req_70_a806a4b4 starting API call
+2025-07-22 11:38:30,032 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 11:38:30,043 - INFO - Request req_70_a806a4b4 completed in 0.01s
+2025-07-22 11:38:30,043 - WARNING - Request req_70_a806a4b4 failed with status 429
+2025-07-22 11:38:30,073 - INFO - Request req_70_a806a4b4 processed in 0.04s total
+2025-07-22 11:38:30,075 - WARNING - Verification failed - no result
+2025-07-22 11:38:30,075 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:30,076 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:30,536 - INFO - Request req_64_8030bf58 completed in 14.83s
+2025-07-22 11:38:30,578 - INFO - Request req_64_8030bf58 processed in 14.87s total
+2025-07-22 11:38:30,579 - WARNING - ACCESS DENIED - Reason: No face detected in the image
+2025-07-22 11:38:30,580 - INFO - TTS queued: Access denied. No face detected in the image
+2025-07-22 11:38:30,583 - INFO - Access denied: No face detected in the image (simulated)
+2025-07-22 11:38:32,378 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:32,378 - INFO - Request req_71_03184ed7 submitted immediately
+2025-07-22 11:38:32,386 - INFO - System status: 1 active, 0 pending requests
+2025-07-22 11:38:32,387 - INFO - Request req_71_03184ed7 starting API call
+2025-07-22 11:38:34,723 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:34,724 - INFO - Request req_72_b720e093 submitted immediately
+2025-07-22 11:38:34,724 - INFO - Request req_72_b720e093 starting API call
+2025-07-22 11:38:34,734 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 11:38:37,211 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:37,224 - INFO - Request req_73_baaf50ac submitted immediately
+2025-07-22 11:38:37,225 - INFO - Request req_73_baaf50ac starting API call
+2025-07-22 11:38:37,228 - INFO - System status: 3 active, 0 pending requests
+2025-07-22 11:38:39,671 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:39,672 - INFO - Request req_74_7bce25e9 queued (position: 1)
+2025-07-22 11:38:39,672 - INFO - System status: 3 active, 1 pending requests
+2025-07-22 11:38:42,110 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:42,111 - INFO - Request req_75_3548bb65 queued (position: 2)
+2025-07-22 11:38:42,113 - INFO - System status: 3 active, 2 pending requests
+2025-07-22 11:38:44,476 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:44,485 - INFO - Request req_76_917aacb2 queued (position: 3)
+2025-07-22 11:38:44,486 - INFO - System status: 3 active, 3 pending requests
+2025-07-22 11:38:47,024 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:47,026 - INFO - Request req_77_6d7b74bf queued (position: 4)
+2025-07-22 11:38:47,026 - INFO - System status: 3 active, 4 pending requests
+2025-07-22 11:38:49,451 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:49,452 - INFO - Request req_78_db6e143b queued (position: 5)
+2025-07-22 11:38:49,453 - INFO - System status: 3 active, 5 pending requests
+2025-07-22 11:38:51,742 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:51,742 - WARNING - Request rejected - queue full (5 pending)
+2025-07-22 11:38:51,743 - ERROR - Verification error: Queue full - system overloaded
+2025-07-22 11:38:51,743 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-22 11:38:51,743 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-22 11:38:51,743 - WARNING - Failed to submit verification request
+2025-07-22 11:38:53,249 - INFO - Request req_72_b720e093 completed in 18.52s
+2025-07-22 11:38:53,250 - WARNING - Request req_72_b720e093 failed with status 429
+2025-07-22 11:38:53,271 - INFO - Request req_73_baaf50ac completed in 16.05s
+2025-07-22 11:38:53,272 - WARNING - Request req_73_baaf50ac failed with status 429
+2025-07-22 11:38:53,333 - INFO - Request req_72_b720e093 processed in 18.61s total
+2025-07-22 11:38:53,336 - WARNING - Verification failed - no result
+2025-07-22 11:38:53,336 - INFO - Request req_73_baaf50ac processed in 16.11s total
+2025-07-22 11:38:53,337 - WARNING - Verification failed - no result
+2025-07-22 11:38:53,337 - INFO - Request req_74_7bce25e9 started from queue (waited 13.67s)
+2025-07-22 11:38:53,339 - INFO - Request req_74_7bce25e9 starting API call
+2025-07-22 11:38:53,339 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:53,340 - INFO - Request req_75_3548bb65 started from queue (waited 11.23s)
+2025-07-22 11:38:53,340 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:53,340 - INFO - Request req_75_3548bb65 starting API call
+2025-07-22 11:38:53,355 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:53,359 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:53,373 - INFO - Request req_75_3548bb65 completed in 0.03s
+2025-07-22 11:38:53,386 - WARNING - Request req_75_3548bb65 failed with status 429
+2025-07-22 11:38:53,390 - INFO - Request req_74_7bce25e9 completed in 0.05s
+2025-07-22 11:38:53,391 - WARNING - Request req_74_7bce25e9 failed with status 429
+2025-07-22 11:38:53,441 - INFO - Request req_74_7bce25e9 processed in 0.10s total
+2025-07-22 11:38:53,442 - WARNING - Verification failed - no result
+2025-07-22 11:38:53,442 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:53,442 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:53,443 - INFO - Request req_75_3548bb65 processed in 0.10s total
+2025-07-22 11:38:53,444 - WARNING - Verification failed - no result
+2025-07-22 11:38:53,445 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:53,445 - WARNING - TTS queue was full, cleared old messages
+2025-07-22 11:38:53,446 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:53,446 - INFO - Request req_76_917aacb2 started from queue (waited 8.96s)
+2025-07-22 11:38:53,446 - INFO - Request req_77_6d7b74bf started from queue (waited 6.42s)
+2025-07-22 11:38:53,447 - INFO - Request req_76_917aacb2 starting API call
+2025-07-22 11:38:53,453 - INFO - Request req_77_6d7b74bf starting API call
+2025-07-22 11:38:53,476 - INFO - Request req_76_917aacb2 completed in 0.03s
+2025-07-22 11:38:53,479 - WARNING - Request req_76_917aacb2 failed with status 429
+2025-07-22 11:38:53,492 - INFO - Request req_77_6d7b74bf completed in 0.04s
+2025-07-22 11:38:53,492 - WARNING - Request req_77_6d7b74bf failed with status 429
+2025-07-22 11:38:53,551 - INFO - Request req_76_917aacb2 processed in 0.11s total
+2025-07-22 11:38:53,552 - WARNING - Verification failed - no result
+2025-07-22 11:38:53,552 - INFO - Request req_77_6d7b74bf processed in 0.11s total
+2025-07-22 11:38:53,553 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:53,553 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:53,554 - WARNING - Verification failed - no result
+2025-07-22 11:38:53,561 - INFO - Request req_78_db6e143b started from queue (waited 4.10s)
+2025-07-22 11:38:53,562 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:53,563 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:53,563 - INFO - Request req_78_db6e143b starting API call
+2025-07-22 11:38:53,603 - INFO - Request req_78_db6e143b completed in 0.04s
+2025-07-22 11:38:53,606 - WARNING - Request req_78_db6e143b failed with status 429
+2025-07-22 11:38:53,663 - INFO - Request req_78_db6e143b processed in 0.11s total
+2025-07-22 11:38:53,664 - WARNING - Verification failed - no result
+2025-07-22 11:38:53,664 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:53,665 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:54,071 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:54,072 - INFO - Request req_80_6cfea8c6 submitted immediately
+2025-07-22 11:38:54,072 - INFO - Request req_80_6cfea8c6 starting API call
+2025-07-22 11:38:54,073 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 11:38:54,155 - INFO - Request req_71_03184ed7 completed in 21.77s
+2025-07-22 11:38:54,156 - WARNING - Request req_71_03184ed7 failed with status 500
+2025-07-22 11:38:54,170 - INFO - Request req_71_03184ed7 processed in 21.79s total
+2025-07-22 11:38:54,170 - WARNING - Verification failed - no result
+2025-07-22 11:38:54,174 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:38:54,181 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:38:56,462 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:56,462 - INFO - Request req_81_5a2e3d6d submitted immediately
+2025-07-22 11:38:56,462 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 11:38:56,463 - INFO - Request req_81_5a2e3d6d starting API call
+2025-07-22 11:38:58,790 - INFO - Face detected - proceeding with verification
+2025-07-22 11:38:58,792 - INFO - Request req_82_ed354f3c submitted immediately
+2025-07-22 11:38:58,793 - INFO - Request req_82_ed354f3c starting API call
+2025-07-22 11:38:58,793 - INFO - System status: 3 active, 0 pending requests
+2025-07-22 11:39:01,398 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:01,398 - INFO - Request req_83_f8473e01 queued (position: 1)
+2025-07-22 11:39:01,399 - INFO - System status: 3 active, 1 pending requests
+2025-07-22 11:39:03,738 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:03,745 - INFO - Request req_84_cd9edb56 queued (position: 2)
+2025-07-22 11:39:03,746 - INFO - System status: 3 active, 2 pending requests
+2025-07-22 11:39:03,746 - INFO - System Statistics:
+2025-07-22 11:39:03,746 - INFO -   Total captures: 103
+2025-07-22 11:39:03,747 - INFO -   Faces detected: 84
+2025-07-22 11:39:03,747 - INFO -   API calls made: 81
+2025-07-22 11:39:03,747 - INFO -   API calls saved: 19
+2025-07-22 11:39:03,748 - INFO -   Efficiency: 18.4% calls saved
+2025-07-22 11:39:03,748 - INFO -   Frames streamed: 0
+2025-07-22 11:39:06,297 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:06,301 - INFO - Request req_85_4ee23fc5 queued (position: 3)
+2025-07-22 11:39:06,301 - INFO - System status: 3 active, 3 pending requests
+2025-07-22 11:39:08,985 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:08,985 - INFO - Request req_86_773b3f5f queued (position: 4)
+2025-07-22 11:39:08,987 - INFO - System status: 3 active, 4 pending requests
+2025-07-22 11:39:11,352 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:11,352 - INFO - Request req_87_c4f83f94 queued (position: 5)
+2025-07-22 11:39:11,353 - INFO - System status: 3 active, 5 pending requests
+2025-07-22 11:39:13,880 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:13,880 - WARNING - Request rejected - queue full (5 pending)
+2025-07-22 11:39:13,880 - ERROR - Verification error: Queue full - system overloaded
+2025-07-22 11:39:13,880 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-22 11:39:13,881 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-22 11:39:13,881 - WARNING - Failed to submit verification request
+2025-07-22 11:39:14,235 - INFO - Request req_81_5a2e3d6d completed in 17.77s
+2025-07-22 11:39:14,235 - WARNING - Request req_81_5a2e3d6d failed with status 429
+2025-07-22 11:39:14,246 - INFO - Request req_82_ed354f3c completed in 15.45s
+2025-07-22 11:39:14,246 - WARNING - Request req_82_ed354f3c failed with status 429
+2025-07-22 11:39:14,254 - INFO - Request req_81_5a2e3d6d processed in 17.79s total
+2025-07-22 11:39:14,256 - WARNING - Verification failed - no result
+2025-07-22 11:39:14,256 - INFO - Request req_82_ed354f3c processed in 15.46s total
+2025-07-22 11:39:14,257 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:14,257 - WARNING - Verification failed - no result
+2025-07-22 11:39:14,266 - INFO - Request req_83_f8473e01 started from queue (waited 12.87s)
+2025-07-22 11:39:14,266 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:14,267 - INFO - Request req_83_f8473e01 starting API call
+2025-07-22 11:39:14,267 - INFO - Request req_84_cd9edb56 started from queue (waited 10.52s)
+2025-07-22 11:39:14,275 - INFO - Request req_84_cd9edb56 starting API call
+2025-07-22 11:39:14,278 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:14,278 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:14,283 - INFO - Request req_84_cd9edb56 completed in 0.01s
+2025-07-22 11:39:14,286 - WARNING - Request req_84_cd9edb56 failed with status 429
+2025-07-22 11:39:14,311 - INFO - Request req_83_f8473e01 completed in 0.04s
+2025-07-22 11:39:14,312 - WARNING - Request req_83_f8473e01 failed with status 429
+2025-07-22 11:39:14,368 - INFO - Request req_83_f8473e01 processed in 0.10s total
+2025-07-22 11:39:14,370 - WARNING - Verification failed - no result
+2025-07-22 11:39:14,371 - INFO - Request req_84_cd9edb56 processed in 0.10s total
+2025-07-22 11:39:14,371 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:14,374 - INFO - Request req_85_4ee23fc5 started from queue (waited 8.07s)
+2025-07-22 11:39:14,374 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:14,374 - INFO - Request req_85_4ee23fc5 starting API call
+2025-07-22 11:39:14,375 - INFO - Request req_86_773b3f5f started from queue (waited 5.39s)
+2025-07-22 11:39:14,376 - INFO - Request req_86_773b3f5f starting API call
+2025-07-22 11:39:14,373 - WARNING - Verification failed - no result
+2025-07-22 11:39:14,392 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:14,392 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:14,396 - INFO - Request req_85_4ee23fc5 completed in 0.02s
+2025-07-22 11:39:14,398 - WARNING - Request req_85_4ee23fc5 failed with status 429
+2025-07-22 11:39:14,405 - INFO - Request req_86_773b3f5f completed in 0.03s
+2025-07-22 11:39:14,408 - WARNING - Request req_86_773b3f5f failed with status 429
+2025-07-22 11:39:14,488 - INFO - Request req_85_4ee23fc5 processed in 0.11s total
+2025-07-22 11:39:14,490 - WARNING - Verification failed - no result
+2025-07-22 11:39:14,490 - INFO - Request req_86_773b3f5f processed in 0.12s total
+2025-07-22 11:39:14,493 - WARNING - Verification failed - no result
+2025-07-22 11:39:14,494 - INFO - Request req_87_c4f83f94 started from queue (waited 3.14s)
+2025-07-22 11:39:14,495 - INFO - Request req_87_c4f83f94 starting API call
+2025-07-22 11:39:14,491 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:14,496 - WARNING - TTS queue was full, cleared old messages
+2025-07-22 11:39:14,496 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:14,494 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:14,505 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:14,513 - INFO - Request req_87_c4f83f94 completed in 0.02s
+2025-07-22 11:39:14,513 - WARNING - Request req_87_c4f83f94 failed with status 429
+2025-07-22 11:39:14,595 - INFO - Request req_87_c4f83f94 processed in 0.10s total
+2025-07-22 11:39:14,596 - WARNING - Verification failed - no result
+2025-07-22 11:39:14,596 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:14,598 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:15,244 - INFO - Request req_80_6cfea8c6 completed in 21.17s
+2025-07-22 11:39:15,246 - WARNING - Request req_80_6cfea8c6 failed with status 500
+2025-07-22 11:39:15,308 - INFO - Request req_80_6cfea8c6 processed in 21.24s total
+2025-07-22 11:39:15,308 - WARNING - Verification failed - no result
+2025-07-22 11:39:15,309 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:15,309 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:16,100 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:16,100 - INFO - Request req_89_c45b2b8b submitted immediately
+2025-07-22 11:39:16,101 - INFO - Request req_89_c45b2b8b starting API call
+2025-07-22 11:39:16,103 - INFO - System status: 1 active, 0 pending requests
+2025-07-22 11:39:18,466 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:18,466 - INFO - Request req_90_2805b530 submitted immediately
+2025-07-22 11:39:18,467 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 11:39:18,466 - INFO - Request req_90_2805b530 starting API call
+2025-07-22 11:39:20,838 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:20,838 - INFO - Request req_91_bfa59b92 submitted immediately
+2025-07-22 11:39:20,838 - INFO - System status: 3 active, 0 pending requests
+2025-07-22 11:39:20,845 - INFO - Request req_91_bfa59b92 starting API call
+2025-07-22 11:39:23,192 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:23,192 - INFO - Request req_92_52d5b59d queued (position: 1)
+2025-07-22 11:39:23,192 - INFO - System status: 3 active, 1 pending requests
+2025-07-22 11:39:25,528 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:25,529 - INFO - Request req_93_9981b481 queued (position: 2)
+2025-07-22 11:39:25,531 - INFO - System status: 3 active, 2 pending requests
+2025-07-22 11:39:27,947 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:27,947 - INFO - Request req_94_2652e108 queued (position: 3)
+2025-07-22 11:39:27,948 - INFO - System status: 3 active, 3 pending requests
+2025-07-22 11:39:30,415 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:30,416 - INFO - Request req_95_9e35d687 queued (position: 4)
+2025-07-22 11:39:30,416 - INFO - System status: 3 active, 4 pending requests
+2025-07-22 11:39:32,781 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:32,782 - INFO - Request req_96_4ed7b17c queued (position: 5)
+2025-07-22 11:39:32,783 - INFO - System status: 3 active, 5 pending requests
+2025-07-22 11:39:34,568 - INFO - Request req_90_2805b530 completed in 16.10s
+2025-07-22 11:39:34,568 - WARNING - Request req_90_2805b530 failed with status 429
+2025-07-22 11:39:34,584 - INFO - Request req_91_bfa59b92 completed in 13.74s
+2025-07-22 11:39:34,584 - WARNING - Request req_91_bfa59b92 failed with status 429
+2025-07-22 11:39:34,610 - INFO - Request req_90_2805b530 processed in 16.14s total
+2025-07-22 11:39:34,618 - WARNING - Verification failed - no result
+2025-07-22 11:39:34,619 - INFO - Request req_91_bfa59b92 processed in 13.78s total
+2025-07-22 11:39:34,621 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:34,621 - INFO - Request req_92_52d5b59d started from queue (waited 11.43s)
+2025-07-22 11:39:34,621 - WARNING - Verification failed - no result
+2025-07-22 11:39:34,621 - INFO - Request req_92_52d5b59d starting API call
+2025-07-22 11:39:34,623 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:34,623 - INFO - Request req_93_9981b481 started from queue (waited 9.09s)
+2025-07-22 11:39:34,624 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:34,623 - INFO - Request req_93_9981b481 starting API call
+2025-07-22 11:39:34,635 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:34,646 - INFO - Request req_92_52d5b59d completed in 0.02s
+2025-07-22 11:39:34,646 - WARNING - Request req_92_52d5b59d failed with status 429
+2025-07-22 11:39:34,661 - INFO - Request req_93_9981b481 completed in 0.04s
+2025-07-22 11:39:34,665 - WARNING - Request req_93_9981b481 failed with status 429
+2025-07-22 11:39:34,735 - INFO - Request req_92_52d5b59d processed in 0.11s total
+2025-07-22 11:39:34,735 - WARNING - Verification failed - no result
+2025-07-22 11:39:34,738 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:34,736 - INFO - Request req_93_9981b481 processed in 0.11s total
+2025-07-22 11:39:34,738 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:34,741 - WARNING - Verification failed - no result
+2025-07-22 11:39:34,741 - INFO - Request req_94_2652e108 started from queue (waited 6.79s)
+2025-07-22 11:39:34,742 - INFO - Request req_94_2652e108 starting API call
+2025-07-22 11:39:34,744 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:34,745 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:34,745 - INFO - Request req_95_9e35d687 started from queue (waited 4.33s)
+2025-07-22 11:39:34,745 - INFO - Request req_95_9e35d687 starting API call
+2025-07-22 11:39:34,771 - INFO - Request req_94_2652e108 completed in 0.03s
+2025-07-22 11:39:34,773 - WARNING - Request req_94_2652e108 failed with status 429
+2025-07-22 11:39:34,787 - INFO - Request req_95_9e35d687 completed in 0.04s
+2025-07-22 11:39:34,787 - WARNING - Request req_95_9e35d687 failed with status 429
+2025-07-22 11:39:34,848 - INFO - Request req_94_2652e108 processed in 0.11s total
+2025-07-22 11:39:34,850 - WARNING - Verification failed - no result
+2025-07-22 11:39:34,850 - INFO - Request req_95_9e35d687 processed in 0.10s total
+2025-07-22 11:39:34,854 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:34,856 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:34,888 - WARNING - Verification failed - no result
+2025-07-22 11:39:34,889 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:34,889 - WARNING - TTS queue was full, cleared old messages
+2025-07-22 11:39:34,889 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:34,898 - INFO - Request req_96_4ed7b17c started from queue (waited 2.12s)
+2025-07-22 11:39:34,912 - INFO - Request req_96_4ed7b17c starting API call
+2025-07-22 11:39:34,942 - INFO - Request req_96_4ed7b17c completed in 0.03s
+2025-07-22 11:39:34,947 - WARNING - Request req_96_4ed7b17c failed with status 429
+2025-07-22 11:39:35,027 - INFO - Request req_96_4ed7b17c processed in 0.13s total
+2025-07-22 11:39:35,029 - WARNING - Verification failed - no result
+2025-07-22 11:39:35,030 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:35,033 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:35,183 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:35,184 - INFO - Request req_97_2efa2464 submitted immediately
+2025-07-22 11:39:35,184 - INFO - Request req_97_2efa2464 starting API call
+2025-07-22 11:39:35,184 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 11:39:35,191 - INFO - Request req_97_2efa2464 completed in 0.01s
+2025-07-22 11:39:35,193 - WARNING - Request req_97_2efa2464 failed with status 429
+2025-07-22 11:39:35,237 - INFO - Request req_97_2efa2464 processed in 0.05s total
+2025-07-22 11:39:35,237 - WARNING - Verification failed - no result
+2025-07-22 11:39:35,238 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:35,238 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:35,664 - INFO - Request req_89_c45b2b8b completed in 19.56s
+2025-07-22 11:39:35,664 - WARNING - Request req_89_c45b2b8b failed with status 500
+2025-07-22 11:39:35,748 - INFO - Request req_89_c45b2b8b processed in 19.65s total
+2025-07-22 11:39:35,749 - WARNING - Verification failed - no result
+2025-07-22 11:39:35,750 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 11:39:35,750 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 11:39:37,402 - INFO - Face detected - proceeding with verification
+2025-07-22 11:39:37,405 - INFO - Request req_98_d63d3d6d submitted immediately
+2025-07-22 11:39:37,405 - INFO - Request req_98_d63d3d6d starting API call
+2025-07-22 11:39:37,406 - INFO - System status: 1 active, 0 pending requests
