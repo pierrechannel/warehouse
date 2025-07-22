@@ -39,12 +39,12 @@ CAPTURE_COOLDOWN = 1.0
 
 # MQTT Streaming Configuration
 MQTT_STREAMING_ENABLED = False
-MQTT_BROKER_HOST = "localhost"
+MQTT_BROKER_HOST = "de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud"
 MQTT_BROKER_PORT = 8883
 MQTT_TOPIC = "door/stream"
 MQTT_CLIENT_ID = f"door-stream-{uuid.uuid4().hex[:8]}"
-MQTT_USERNAME = None
-MQTT_PASSWORD = None
+MQTT_USERNAME = "chanel"
+MQTT_PASSWORD = "Npc@1234"
 MQTT_USE_TLS = True
 MQTT_CA_CERTS = None
 LIVESTREAM_FPS = 3
