@@ -76,3 +76,293 @@
 2025-07-22 10:47:37,551 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
 2025-07-22 10:47:37,551 - INFO - Falling back to system audio commands
 2025-07-22 10:47:37,577 - WARNING - All system TTS methods failed for: System shutting down
+2025-07-22 10:50:00,439 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:50:00,479 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:50:00,495 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-22 10:50:00,521 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-22 10:50:00,553 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-22 10:50:00,553 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=localhost:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-22 10:50:00,554 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:50:00,596 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:50:00,597 - INFO - Falling back to system audio commands
+2025-07-22 10:50:00,640 - WARNING - All system TTS methods failed for: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-22 10:50:00,656 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:50:00,657 - INFO - Falling back to system audio commands
+2025-07-22 10:50:00,697 - WARNING - All system TTS methods failed for: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:50:01,024 - INFO - Haar cascade face detector initialized
+2025-07-22 10:50:01,026 - INFO - TTS queued: Setting up web camera
+2025-07-22 10:50:01,033 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:50:01,033 - INFO - Falling back to system audio commands
+2025-07-22 10:50:01,056 - WARNING - All system TTS methods failed for: Setting up web camera
+2025-07-22 10:50:01,918 - INFO - Webcam initialized successfully
+2025-07-22 10:50:01,924 - INFO - TTS queued: Web camera ready
+2025-07-22 10:50:01,931 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:50:01,932 - INFO - Optimized door control system starting...
+2025-07-22 10:50:01,932 - INFO - Face detection enabled using haar method
+2025-07-22 10:50:01,932 - INFO - TTS queued: Face detection enabled using haar
+2025-07-22 10:50:01,935 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:50:01,937 - INFO - Falling back to system audio commands
+2025-07-22 10:50:01,987 - WARNING - All system TTS methods failed for: Web camera ready
+2025-07-22 10:50:01,998 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:50:01,998 - INFO - Falling back to system audio commands
+2025-07-22 10:50:02,042 - WARNING - All system TTS methods failed for: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:50:02,060 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:50:02,060 - INFO - Falling back to system audio commands
+2025-07-22 10:50:02,099 - WARNING - All system TTS methods failed for: Face detection enabled using haar
+2025-07-22 10:50:04,972 - WARNING - Could not connect to API - will retry during operation
+2025-07-22 10:50:04,973 - INFO - TTS queued: Server connection failed, will retry
+2025-07-22 10:50:04,973 - INFO - TTS queued: Automatic mode activated with face detection
+2025-07-22 10:50:04,973 - INFO - Starting automatic capture mode with face detection
+2025-07-22 10:50:04,987 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:50:04,988 - INFO - Falling back to system audio commands
+2025-07-22 10:50:05,029 - WARNING - All system TTS methods failed for: Server connection failed, will retry
+2025-07-22 10:50:05,042 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:50:05,042 - INFO - Falling back to system audio commands
+2025-07-22 10:50:05,102 - WARNING - All system TTS methods failed for: Automatic mode activated with face detection
+2025-07-22 10:50:15,887 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:15,888 - ERROR - Request req_1_a1d68f7d failed: name 'time' is not defined
+2025-07-22 10:50:15,888 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:18,117 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:18,118 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:18,119 - ERROR - Request req_2_bdd1f770 failed: name 'time' is not defined
+2025-07-22 10:50:24,765 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:24,766 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:24,766 - ERROR - Request req_3_97636bcf failed: name 'time' is not defined
+2025-07-22 10:50:29,288 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:29,289 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:29,289 - ERROR - Request req_4_f0d30f7c failed: name 'time' is not defined
+2025-07-22 10:50:31,514 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:31,516 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:31,516 - ERROR - Request req_5_ebb8a18e failed: name 'time' is not defined
+2025-07-22 10:50:33,678 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:33,679 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:33,680 - ERROR - Request req_6_cb17edac failed: name 'time' is not defined
+2025-07-22 10:50:35,849 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:35,849 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:35,849 - ERROR - Request req_7_d85ebf9a failed: name 'time' is not defined
+2025-07-22 10:50:38,117 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:38,118 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:38,118 - ERROR - Request req_8_57112c17 failed: name 'time' is not defined
+2025-07-22 10:50:40,351 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:40,352 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:40,355 - ERROR - Request req_9_843af199 failed: name 'time' is not defined
+2025-07-22 10:50:42,560 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:42,560 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:42,560 - ERROR - Request req_10_7ed733ca failed: name 'time' is not defined
+2025-07-22 10:50:44,793 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:44,794 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:44,795 - ERROR - Request req_11_f118db5b failed: name 'time' is not defined
+2025-07-22 10:50:47,089 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:47,090 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:47,090 - ERROR - Request req_12_07570b9d failed: name 'time' is not defined
+2025-07-22 10:50:49,312 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:49,314 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:49,315 - ERROR - Request req_13_d5a30cba failed: name 'time' is not defined
+2025-07-22 10:50:51,634 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:51,638 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:51,641 - ERROR - Request req_14_bffff527 failed: name 'time' is not defined
+2025-07-22 10:50:56,437 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:56,438 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:56,438 - ERROR - Request req_15_9bbf5222 failed: name 'time' is not defined
+2025-07-22 10:50:59,077 - INFO - Face detected - proceeding with verification
+2025-07-22 10:50:59,083 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:50:59,083 - ERROR - Request req_16_ece6b0a1 failed: name 'time' is not defined
+2025-07-22 10:51:01,351 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:01,352 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:51:01,360 - ERROR - Request req_17_facb5016 failed: name 'time' is not defined
+2025-07-22 10:51:03,911 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:03,912 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:51:03,913 - ERROR - Request req_18_a1bc255e failed: name 'time' is not defined
+2025-07-22 10:51:06,188 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:06,189 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:51:06,189 - INFO - System Statistics:
+2025-07-22 10:51:06,189 - INFO -   Total captures: 27
+2025-07-22 10:51:06,189 - INFO -   Faces detected: 19
+2025-07-22 10:51:06,189 - INFO -   API calls made: 0
+2025-07-22 10:51:06,189 - INFO -   API calls saved: 8
+2025-07-22 10:51:06,190 - INFO -   Efficiency: 29.6% calls saved
+2025-07-22 10:51:06,191 - INFO -   Frames streamed: 0
+2025-07-22 10:51:06,191 - ERROR - Request req_19_c9316b92 failed: name 'time' is not defined
+2025-07-22 10:51:08,538 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:08,540 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:51:08,540 - ERROR - Request req_20_4b9b1f8b failed: name 'time' is not defined
+2025-07-22 10:51:10,917 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:10,918 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:51:10,918 - ERROR - Request req_21_5383cfe0 failed: name 'time' is not defined
+2025-07-22 10:51:13,192 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:13,194 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:51:13,195 - ERROR - Request req_22_add14e86 failed: name 'time' is not defined
+2025-07-22 10:51:14,473 - INFO - Received interrupt signal
+2025-07-22 10:51:14,478 - INFO - TTS queued: System shutting down
+2025-07-22 10:51:14,478 - INFO - Stopping optimized door control system...
+2025-07-22 10:51:14,482 - INFO - System Statistics:
+2025-07-22 10:51:14,482 - INFO -   Total captures: 30
+2025-07-22 10:51:14,483 - INFO -   Faces detected: 22
+2025-07-22 10:51:14,483 - INFO -   API calls made: 0
+2025-07-22 10:51:14,483 - INFO -   API calls saved: 8
+2025-07-22 10:51:14,484 - INFO -   Efficiency: 26.7% calls saved
+2025-07-22 10:51:14,484 - INFO -   Frames streamed: 0
+2025-07-22 10:51:14,492 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:14,492 - INFO - Falling back to system audio commands
+2025-07-22 10:51:14,514 - INFO - System stopped
+2025-07-22 10:51:14,515 - INFO - TTS queued: System shutting down
+2025-07-22 10:51:14,515 - INFO - Stopping optimized door control system...
+2025-07-22 10:51:14,515 - INFO - System Statistics:
+2025-07-22 10:51:14,516 - INFO -   Total captures: 30
+2025-07-22 10:51:14,516 - INFO -   Faces detected: 22
+2025-07-22 10:51:14,516 - INFO -   API calls made: 0
+2025-07-22 10:51:14,516 - INFO -   API calls saved: 8
+2025-07-22 10:51:14,516 - INFO -   Efficiency: 26.7% calls saved
+2025-07-22 10:51:14,517 - INFO -   Frames streamed: 0
+2025-07-22 10:51:14,517 - INFO - System stopped
+2025-07-22 10:51:14,553 - WARNING - All system TTS methods failed for: System shutting down
+2025-07-22 10:51:14,565 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:14,568 - INFO - Falling back to system audio commands
+2025-07-22 10:51:14,609 - WARNING - All system TTS methods failed for: System shutting down
+2025-07-22 10:51:19,352 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:51:19,362 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:51:19,363 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-22 10:51:19,368 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-22 10:51:19,375 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-22 10:51:19,376 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=localhost:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-22 10:51:19,378 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:51:19,389 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:19,390 - INFO - Falling back to system audio commands
+2025-07-22 10:51:19,436 - WARNING - All system TTS methods failed for: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-22 10:51:19,446 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:19,446 - INFO - Falling back to system audio commands
+2025-07-22 10:51:19,477 - WARNING - All system TTS methods failed for: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:51:19,559 - INFO - Haar cascade face detector initialized
+2025-07-22 10:51:19,560 - INFO - TTS queued: Setting up web camera
+2025-07-22 10:51:19,569 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:19,570 - INFO - Falling back to system audio commands
+2025-07-22 10:51:19,611 - WARNING - All system TTS methods failed for: Setting up web camera
+2025-07-22 10:51:20,442 - INFO - Webcam initialized successfully
+2025-07-22 10:51:20,444 - INFO - TTS queued: Web camera ready
+2025-07-22 10:51:20,450 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:51:20,450 - INFO - Optimized door control system starting...
+2025-07-22 10:51:20,450 - INFO - Face detection enabled using haar method
+2025-07-22 10:51:20,450 - INFO - TTS queued: Face detection enabled using haar
+2025-07-22 10:51:20,466 - WARNING - Could not connect to API - will retry during operation
+2025-07-22 10:51:20,467 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:20,467 - INFO - Falling back to system audio commands
+2025-07-22 10:51:20,468 - INFO - TTS queued: Server connection failed, will retry
+2025-07-22 10:51:20,468 - INFO - TTS queued: Automatic mode activated with face detection
+2025-07-22 10:51:20,468 - INFO - Starting automatic capture mode with face detection
+2025-07-22 10:51:20,506 - WARNING - All system TTS methods failed for: Web camera ready
+2025-07-22 10:51:20,523 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:20,523 - INFO - Falling back to system audio commands
+2025-07-22 10:51:20,562 - WARNING - All system TTS methods failed for: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:51:20,571 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:20,571 - INFO - Falling back to system audio commands
+2025-07-22 10:51:20,592 - WARNING - All system TTS methods failed for: Face detection enabled using haar
+2025-07-22 10:51:20,597 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:20,598 - INFO - Falling back to system audio commands
+2025-07-22 10:51:20,623 - WARNING - All system TTS methods failed for: Server connection failed, will retry
+2025-07-22 10:51:20,632 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:20,632 - INFO - Falling back to system audio commands
+2025-07-22 10:51:20,657 - WARNING - All system TTS methods failed for: Automatic mode activated with face detection
+2025-07-22 10:51:29,069 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:29,077 - INFO - Request req_1_c5bf4878 starting API call
+2025-07-22 10:51:29,086 - ERROR - Request req_1_c5bf4878 failed: HTTPConnectionPool(host='192.168.5.41', port=3000): Max retries exceeded with url: /api/verify (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x753f6e10ca70>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-07-22 10:51:29,087 - INFO - Request req_1_c5bf4878 submitted immediately
+2025-07-22 10:51:29,087 - INFO - System status: 1 active, 0 pending requests
+2025-07-22 10:51:29,129 - INFO - Request req_1_c5bf4878 processed in 0.04s total
+2025-07-22 10:51:29,133 - WARNING - Verification failed - no result
+2025-07-22 10:51:29,133 - INFO - TTS queued: Access denied. Verification failed
+2025-07-22 10:51:29,134 - INFO - Access denied: Verification failed (simulated)
+2025-07-22 10:51:29,139 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:51:29,139 - INFO - Falling back to system audio commands
+2025-07-22 10:51:29,162 - WARNING - All system TTS methods failed for: Access denied. Verification failed
+2025-07-22 10:51:31,321 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:31,321 - INFO - Request req_2_f511af9c submitted immediately
+2025-07-22 10:51:31,325 - INFO - System status: 1 active, 0 pending requests
+2025-07-22 10:51:31,321 - INFO - Request req_2_f511af9c starting API call
+2025-07-22 10:51:33,506 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:33,508 - INFO - Request req_3_ca122334 starting API call
+2025-07-22 10:51:33,512 - INFO - Request req_3_ca122334 submitted immediately
+2025-07-22 10:51:33,512 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 10:51:35,716 - INFO - Face detected - proceeding with verification
+2025-07-22 10:51:35,719 - INFO - Request req_4_3bff1e26 starting API call
+2025-07-22 10:51:35,719 - INFO - Request req_4_3bff1e26 submitted immediately
+2025-07-22 10:51:35,722 - INFO - System status: 3 active, 0 pending requests
+2025-07-22 10:51:37,380 - INFO - Received interrupt signal
+2025-07-22 10:51:37,381 - INFO - TTS queued: System shutting down
+2025-07-22 10:51:37,381 - INFO - Stopping optimized door control system...
+2025-07-22 10:51:37,384 - INFO - System Statistics:
+2025-07-22 10:51:37,385 - INFO -   Total captures: 7
+2025-07-22 10:51:37,385 - INFO -   Faces detected: 4
+2025-07-22 10:51:37,385 - INFO -   API calls made: 4
+2025-07-22 10:51:37,386 - INFO -   API calls saved: 3
+2025-07-22 10:51:37,386 - INFO -   Efficiency: 42.9% calls saved
+2025-07-22 10:51:37,390 - INFO -   Frames streamed: 0
+2025-07-22 10:51:37,491 - INFO - System stopped
+2025-07-22 10:51:37,492 - INFO - TTS queued: System shutting down
+2025-07-22 10:51:37,492 - INFO - Stopping optimized door control system...
+2025-07-22 10:51:37,492 - INFO - System Statistics:
+2025-07-22 10:51:37,492 - INFO -   Total captures: 7
+2025-07-22 10:51:37,492 - INFO -   Faces detected: 4
+2025-07-22 10:51:37,492 - INFO -   API calls made: 4
+2025-07-22 10:51:37,493 - INFO -   API calls saved: 3
+2025-07-22 10:51:37,493 - INFO -   Efficiency: 42.9% calls saved
+2025-07-22 10:51:37,496 - INFO -   Frames streamed: 0
+2025-07-22 10:51:37,496 - INFO - System stopped
+2025-07-22 10:51:50,938 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:51:50,942 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:51:50,949 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-22 10:51:50,961 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-22 10:51:50,962 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-22 10:51:50,970 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=localhost:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-22 10:51:50,971 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:51:51,069 - INFO - Haar cascade face detector initialized
+2025-07-22 10:51:51,070 - INFO - TTS queued: Setting up web camera
+2025-07-22 10:51:51,946 - INFO - Webcam initialized successfully
+2025-07-22 10:51:51,946 - INFO - TTS queued: Web camera ready
+2025-07-22 10:51:51,947 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:51:51,947 - INFO - Optimized door control system starting...
+2025-07-22 10:51:51,947 - INFO - Face detection enabled using haar method
+2025-07-22 10:51:51,947 - INFO - TTS queued: Face detection enabled using haar
+2025-07-22 10:51:54,959 - WARNING - Could not connect to API - will retry during operation
+2025-07-22 10:51:54,960 - INFO - TTS queued: Server connection failed, will retry
+2025-07-22 10:51:54,960 - INFO - TTS queued: Automatic mode activated with face detection
+2025-07-22 10:51:54,960 - WARNING - TTS queue was full, cleared old messages
+2025-07-22 10:51:54,962 - INFO - Starting automatic capture mode with face detection
+2025-07-22 10:52:05,754 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:05,759 - INFO - Request req_1_795a6c2e starting API call
+2025-07-22 10:52:05,765 - INFO - Request req_1_795a6c2e submitted immediately
+2025-07-22 10:52:05,765 - INFO - System status: 1 active, 0 pending requests
+2025-07-22 10:52:08,066 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:08,067 - INFO - Request req_2_0ee82a41 starting API call
+2025-07-22 10:52:08,070 - INFO - Request req_2_0ee82a41 submitted immediately
+2025-07-22 10:52:08,070 - INFO - System status: 2 active, 0 pending requests
+2025-07-22 10:52:10,386 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:10,395 - INFO - Request req_3_9f690d59 starting API call
+2025-07-22 10:52:10,395 - INFO - Request req_3_9f690d59 submitted immediately
+2025-07-22 10:52:10,397 - INFO - System status: 3 active, 0 pending requests
+2025-07-22 10:52:12,659 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:12,661 - INFO - Request req_4_03aee9c9 queued (position: 1)
+2025-07-22 10:52:12,663 - INFO - System status: 3 active, 1 pending requests
+2025-07-22 10:52:14,940 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:14,941 - INFO - Request req_5_e3d38876 queued (position: 2)
+2025-07-22 10:52:14,941 - INFO - System status: 3 active, 2 pending requests
+2025-07-22 10:52:17,300 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:17,301 - INFO - Request req_6_1a001a12 queued (position: 3)
+2025-07-22 10:52:17,302 - INFO - System status: 3 active, 3 pending requests
+2025-07-22 10:52:19,503 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:19,504 - INFO - Request req_7_daea4b55 queued (position: 4)
+2025-07-22 10:52:19,505 - INFO - System status: 3 active, 4 pending requests
+2025-07-22 10:52:21,803 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:21,804 - INFO - Request req_8_99a88eeb queued (position: 5)
+2025-07-22 10:52:21,804 - INFO - System status: 3 active, 5 pending requests
+2025-07-22 10:52:24,038 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:24,039 - WARNING - Request rejected - queue full (5 pending)
+2025-07-22 10:52:24,039 - ERROR - Verification error: Queue full - system overloaded
+2025-07-22 10:52:24,040 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-22 10:52:24,041 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-22 10:52:24,042 - WARNING - Failed to submit verification request
+2025-07-22 10:52:26,245 - INFO - Face detected - proceeding with verification
+2025-07-22 10:52:26,245 - WARNING - Request rejected - queue full (5 pending)
+2025-07-22 10:52:26,246 - ERROR - Verification error: Queue full - system overloaded
+2025-07-22 10:52:26,246 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-22 10:52:26,246 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-22 10:52:26,247 - WARNING - Failed to submit verification request
