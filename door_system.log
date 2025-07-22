@@ -1,0 +1,78 @@
+2025-07-22 10:45:44,172 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:45:44,179 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:47:19,072 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:47:19,118 - INFO - Pygame mixer initialized successfully
+2025-07-22 10:47:19,125 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-22 10:47:19,173 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-22 10:47:19,176 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-22 10:47:19,176 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=localhost:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-22 10:47:19,176 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:47:19,401 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:19,401 - INFO - Falling back to system audio commands
+2025-07-22 10:47:19,670 - WARNING - All system TTS methods failed for: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-22 10:47:19,691 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:19,692 - INFO - Falling back to system audio commands
+2025-07-22 10:47:19,735 - WARNING - All system TTS methods failed for: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:47:20,021 - INFO - Haar cascade face detector initialized
+2025-07-22 10:47:20,048 - INFO - TTS queued: Setting up web camera
+2025-07-22 10:47:20,172 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:20,172 - INFO - Falling back to system audio commands
+2025-07-22 10:47:20,218 - WARNING - All system TTS methods failed for: Setting up web camera
+2025-07-22 10:47:22,061 - INFO - Webcam initialized successfully
+2025-07-22 10:47:22,061 - INFO - TTS queued: Web camera ready
+2025-07-22 10:47:22,062 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:47:22,062 - INFO - Optimized door control system starting...
+2025-07-22 10:47:22,062 - INFO - Face detection enabled using haar method
+2025-07-22 10:47:22,063 - INFO - TTS queued: Face detection enabled using haar
+2025-07-22 10:47:22,072 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:22,073 - INFO - Falling back to system audio commands
+2025-07-22 10:47:22,107 - WARNING - Could not connect to API - will retry during operation
+2025-07-22 10:47:22,113 - INFO - TTS queued: Server connection failed, will retry
+2025-07-22 10:47:22,114 - INFO - TTS queued: Automatic mode activated with face detection
+2025-07-22 10:47:22,114 - INFO - Starting automatic capture mode with face detection
+2025-07-22 10:47:22,119 - WARNING - All system TTS methods failed for: Web camera ready
+2025-07-22 10:47:22,128 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:22,128 - INFO - Falling back to system audio commands
+2025-07-22 10:47:22,164 - WARNING - All system TTS methods failed for: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-22 10:47:22,172 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:22,173 - INFO - Falling back to system audio commands
+2025-07-22 10:47:22,193 - WARNING - All system TTS methods failed for: Face detection enabled using haar
+2025-07-22 10:47:22,197 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:22,198 - INFO - Falling back to system audio commands
+2025-07-22 10:47:22,223 - WARNING - All system TTS methods failed for: Server connection failed, will retry
+2025-07-22 10:47:22,228 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:22,229 - INFO - Falling back to system audio commands
+2025-07-22 10:47:22,242 - WARNING - All system TTS methods failed for: Automatic mode activated with face detection
+2025-07-22 10:47:33,911 - INFO - Face detected - proceeding with verification
+2025-07-22 10:47:33,915 - ERROR - Request req_1_759fc68b failed: name 'time' is not defined
+2025-07-22 10:47:33,915 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:47:36,209 - INFO - Face detected - proceeding with verification
+2025-07-22 10:47:36,210 - ERROR - Error in async capture and verify: name 'time' is not defined
+2025-07-22 10:47:36,210 - ERROR - Request req_2_e8cac900 failed: name 'time' is not defined
+2025-07-22 10:47:37,466 - INFO - Received interrupt signal
+2025-07-22 10:47:37,466 - INFO - TTS queued: System shutting down
+2025-07-22 10:47:37,467 - INFO - Stopping optimized door control system...
+2025-07-22 10:47:37,470 - INFO - System Statistics:
+2025-07-22 10:47:37,470 - INFO -   Total captures: 5
+2025-07-22 10:47:37,471 - INFO -   Faces detected: 2
+2025-07-22 10:47:37,471 - INFO -   API calls made: 0
+2025-07-22 10:47:37,472 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:37,473 - INFO -   API calls saved: 3
+2025-07-22 10:47:37,473 - INFO - Falling back to system audio commands
+2025-07-22 10:47:37,473 - INFO -   Efficiency: 60.0% calls saved
+2025-07-22 10:47:37,474 - INFO -   Frames streamed: 0
+2025-07-22 10:47:37,505 - WARNING - All system TTS methods failed for: System shutting down
+2025-07-22 10:47:37,530 - INFO - System stopped
+2025-07-22 10:47:37,531 - INFO - TTS queued: System shutting down
+2025-07-22 10:47:37,533 - INFO - Stopping optimized door control system...
+2025-07-22 10:47:37,534 - INFO - System Statistics:
+2025-07-22 10:47:37,534 - INFO -   Total captures: 5
+2025-07-22 10:47:37,535 - INFO -   Faces detected: 2
+2025-07-22 10:47:37,535 - INFO -   API calls made: 0
+2025-07-22 10:47:37,537 - INFO -   API calls saved: 3
+2025-07-22 10:47:37,538 - INFO -   Efficiency: 60.0% calls saved
+2025-07-22 10:47:37,538 - INFO -   Frames streamed: 0
+2025-07-22 10:47:37,538 - INFO - System stopped
+2025-07-22 10:47:37,551 - ERROR - Pygame TTS error: Failed to connect. Probable cause: Unknown
+2025-07-22 10:47:37,551 - INFO - Falling back to system audio commands
+2025-07-22 10:47:37,577 - WARNING - All system TTS methods failed for: System shutting down
