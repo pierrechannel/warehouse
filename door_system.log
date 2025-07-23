@@ -9157,3 +9157,436 @@
 2025-07-22 11:43:42,920 - ERROR - Request processor error: cannot schedule new futures after shutdown
 2025-07-22 11:43:43,325 - INFO - Request req_194_b2344528 completed in 19.43s
 2025-07-22 11:43:43,325 - WARNING - Request req_194_b2344528 failed with status 500
+2025-07-23 16:14:19,053 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:14:19,213 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:14:19,217 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-23 16:14:19,223 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-23 16:14:19,224 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-23 16:14:19,226 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-23 16:14:19,227 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:14:19,458 - INFO - Haar cascade face detector initialized
+2025-07-23 16:14:19,459 - INFO - TTS queued: Setting up web camera
+2025-07-23 16:14:20,583 - INFO - Webcam initialized successfully
+2025-07-23 16:14:20,584 - INFO - TTS queued: Web camera ready
+2025-07-23 16:14:20,584 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:14:20,584 - INFO - Optimized door control system starting...
+2025-07-23 16:14:20,585 - INFO - Face detection enabled using haar method
+2025-07-23 16:14:20,585 - INFO - TTS queued: Face detection enabled using haar
+2025-07-23 16:14:20,691 - INFO - TLS enabled for MQTT connection
+2025-07-23 16:14:20,691 - INFO - MQTT authentication set for user: chanel
+2025-07-23 16:14:21,411 - INFO - MQTT client initialized for de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:14:21,412 - ERROR - Error capturing frame: name 'time' is not defined
+2025-07-23 16:14:21,414 - INFO - Started MQTT streaming to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:14:21,418 - ERROR - Error in main loop: TextToSpeech.speak() missing 1 required positional argument: 'message'
+2025-07-23 16:14:21,418 - INFO - TTS queued: System error
+2025-07-23 16:14:21,418 - INFO - TTS queued: System shutting down
+2025-07-23 16:14:21,419 - WARNING - TTS queue was full, cleared old messages
+2025-07-23 16:14:21,420 - INFO - Stopping optimized door control system...
+2025-07-23 16:14:21,595 - INFO - MQTT client connected to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883
+2025-07-23 16:14:21,700 - INFO - MQTT client disconnected
+2025-07-23 16:14:21,704 - INFO - MQTT streaming stopped
+2025-07-23 16:14:21,704 - ERROR - Unexpected error: TextToSpeech.speak() missing 1 required positional argument: 'message'
+2025-07-23 16:14:21,704 - INFO - TTS queued: Application error
+2025-07-23 16:14:21,705 - INFO - TTS queued: System shutting down
+2025-07-23 16:14:21,705 - INFO - Stopping optimized door control system...
+2025-07-23 16:14:21,705 - INFO - MQTT client disconnected
+2025-07-23 16:14:21,706 - INFO - MQTT streaming stopped
+2025-07-23 16:18:07,339 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:18:07,356 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-23 16:18:07,384 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-23 16:18:07,404 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-23 16:18:07,404 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-23 16:18:07,405 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:18:07,472 - INFO - Haar cascade face detector initialized
+2025-07-23 16:18:07,474 - INFO - TTS queued: Setting up web camera
+2025-07-23 16:18:08,356 - INFO - Webcam initialized successfully
+2025-07-23 16:18:08,357 - INFO - TTS queued: Web camera ready
+2025-07-23 16:18:08,357 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:18:08,357 - INFO - Optimized door control system starting...
+2025-07-23 16:18:08,361 - INFO - Face detection enabled using haar method
+2025-07-23 16:18:08,361 - INFO - TTS queued: Face detection enabled using haar
+2025-07-23 16:18:08,512 - INFO - TLS enabled for MQTT connection
+2025-07-23 16:18:08,513 - INFO - MQTT authentication set for user: chanel
+2025-07-23 16:18:10,327 - INFO - MQTT client initialized for de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:18:10,329 - ERROR - Error capturing frame: name 'time' is not defined
+2025-07-23 16:18:10,336 - INFO - Started MQTT streaming to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:18:10,336 - ERROR - Error in main loop: TextToSpeech.speak() missing 1 required positional argument: 'message'
+2025-07-23 16:18:10,336 - INFO - TTS queued: System error
+2025-07-23 16:18:10,336 - INFO - TTS queued: System shutting down
+2025-07-23 16:18:10,337 - WARNING - TTS queue was full, cleared old messages
+2025-07-23 16:18:10,337 - INFO - Stopping optimized door control system...
+2025-07-23 16:18:10,526 - INFO - MQTT client connected to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883
+2025-07-23 16:18:10,571 - INFO - MQTT client disconnected
+2025-07-23 16:18:10,572 - INFO - MQTT streaming stopped
+2025-07-23 16:18:10,572 - ERROR - Unexpected error: TextToSpeech.speak() missing 1 required positional argument: 'message'
+2025-07-23 16:18:10,573 - INFO - TTS queued: Application error
+2025-07-23 16:18:10,576 - INFO - TTS queued: System shutting down
+2025-07-23 16:18:10,576 - INFO - Stopping optimized door control system...
+2025-07-23 16:18:10,580 - INFO - MQTT client disconnected
+2025-07-23 16:18:10,581 - INFO - MQTT streaming stopped
+2025-07-23 16:21:37,254 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:21:37,256 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-23 16:21:37,277 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-23 16:21:37,277 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-23 16:21:37,277 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-23 16:21:37,284 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:21:37,351 - INFO - Haar cascade face detector initialized
+2025-07-23 16:21:37,352 - INFO - TTS queued: Setting up web camera
+2025-07-23 16:21:38,236 - INFO - Webcam initialized successfully
+2025-07-23 16:21:38,237 - INFO - TTS queued: Web camera ready
+2025-07-23 16:21:38,237 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:21:38,238 - INFO - Optimized door control system starting...
+2025-07-23 16:21:38,238 - INFO - Face detection enabled using haar method
+2025-07-23 16:21:38,238 - INFO - TTS queued: Face detection enabled using haar
+2025-07-23 16:21:38,402 - INFO - TLS enabled for MQTT connection
+2025-07-23 16:21:38,403 - INFO - MQTT authentication set for user: chanel
+2025-07-23 16:21:39,095 - INFO - MQTT client initialized for de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:21:39,096 - ERROR - Error capturing frame: name 'time' is not defined
+2025-07-23 16:21:39,096 - INFO - Started MQTT streaming to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:21:39,097 - ERROR - Error in main loop: TextToSpeech.speak() missing 1 required positional argument: 'message'
+2025-07-23 16:21:39,098 - INFO - TTS queued: System error
+2025-07-23 16:21:39,098 - INFO - TTS queued: System shutting down
+2025-07-23 16:21:39,098 - WARNING - TTS queue was full, cleared old messages
+2025-07-23 16:21:39,099 - INFO - Stopping optimized door control system...
+2025-07-23 16:21:39,299 - INFO - MQTT client connected to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883
+2025-07-23 16:21:39,320 - INFO - MQTT client disconnected
+2025-07-23 16:21:39,321 - INFO - MQTT streaming stopped
+2025-07-23 16:21:39,321 - ERROR - Unexpected error: TextToSpeech.speak() missing 1 required positional argument: 'message'
+2025-07-23 16:21:39,321 - INFO - TTS queued: Application error
+2025-07-23 16:21:39,321 - INFO - TTS queued: System shutting down
+2025-07-23 16:21:39,321 - INFO - Stopping optimized door control system...
+2025-07-23 16:21:39,322 - INFO - MQTT client disconnected
+2025-07-23 16:21:39,322 - INFO - MQTT streaming stopped
+2025-07-23 16:22:34,102 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:22:34,110 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-23 16:22:34,116 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-23 16:22:34,118 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-23 16:22:34,118 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-23 16:22:34,119 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:22:34,198 - INFO - Haar cascade face detector initialized
+2025-07-23 16:22:34,199 - INFO - TTS queued: Setting up web camera
+2025-07-23 16:22:35,069 - INFO - Webcam initialized successfully
+2025-07-23 16:22:35,072 - INFO - TTS queued: Web camera ready
+2025-07-23 16:22:35,072 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:22:35,073 - INFO - Optimized door control system starting...
+2025-07-23 16:22:35,073 - INFO - Face detection enabled using haar method
+2025-07-23 16:22:35,074 - INFO - TTS queued: Face detection enabled using haar
+2025-07-23 16:22:35,246 - INFO - TLS enabled for MQTT connection
+2025-07-23 16:22:35,247 - INFO - MQTT authentication set for user: chanel
+2025-07-23 16:22:35,910 - INFO - MQTT client initialized for de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:22:35,916 - INFO - Started MQTT streaming to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:22:35,916 - ERROR - Error in main loop: TextToSpeech.speak() missing 1 required positional argument: 'message'
+2025-07-23 16:22:35,918 - INFO - TTS queued: System error
+2025-07-23 16:22:35,918 - INFO - TTS queued: System shutting down
+2025-07-23 16:22:35,918 - WARNING - TTS queue was full, cleared old messages
+2025-07-23 16:22:35,919 - INFO - Stopping optimized door control system...
+2025-07-23 16:22:36,103 - INFO - MQTT client connected to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883
+2025-07-23 16:22:36,413 - INFO - MQTT client disconnected
+2025-07-23 16:22:36,415 - INFO - MQTT streaming stopped
+2025-07-23 16:22:36,417 - ERROR - Unexpected error: TextToSpeech.speak() missing 1 required positional argument: 'message'
+2025-07-23 16:22:36,418 - INFO - TTS queued: Application error
+2025-07-23 16:22:36,418 - INFO - TTS queued: System shutting down
+2025-07-23 16:22:36,418 - INFO - Stopping optimized door control system...
+2025-07-23 16:22:36,418 - INFO - MQTT client disconnected
+2025-07-23 16:22:36,419 - INFO - MQTT streaming stopped
+2025-07-23 16:26:13,799 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:26:13,800 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-23 16:26:13,819 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-23 16:26:13,819 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-23 16:26:13,838 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-23 16:26:13,838 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:26:13,898 - INFO - Haar cascade face detector initialized
+2025-07-23 16:26:13,899 - INFO - TTS queued: Setting up web camera
+2025-07-23 16:26:14,787 - INFO - Webcam initialized successfully
+2025-07-23 16:26:14,787 - INFO - TTS queued: Web camera ready
+2025-07-23 16:26:14,788 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:26:14,789 - INFO - Optimized door control system starting...
+2025-07-23 16:26:14,789 - INFO - Face detection enabled using haar method
+2025-07-23 16:26:14,789 - INFO - TTS queued: Face detection enabled using haar
+2025-07-23 16:26:14,934 - INFO - TLS enabled for MQTT connection
+2025-07-23 16:26:14,934 - INFO - MQTT authentication set for user: chanel
+2025-07-23 16:26:15,613 - INFO - MQTT client initialized for de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:26:15,614 - INFO - Started MQTT streaming to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:26:15,615 - ERROR - Error in main loop: 'LiveStream' object has no attribute 'tts'
+2025-07-23 16:26:15,616 - INFO - TTS queued: System error
+2025-07-23 16:26:15,617 - INFO - TTS queued: System shutting down
+2025-07-23 16:26:15,618 - WARNING - TTS queue was full, cleared old messages
+2025-07-23 16:26:15,619 - INFO - Stopping optimized door control system...
+2025-07-23 16:26:15,843 - INFO - MQTT client connected to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883
+2025-07-23 16:26:16,115 - INFO - MQTT client disconnected
+2025-07-23 16:26:16,115 - INFO - MQTT streaming stopped
+2025-07-23 16:26:16,116 - ERROR - Unexpected error: 'LiveStream' object has no attribute 'tts'
+2025-07-23 16:26:16,116 - INFO - TTS queued: Application error
+2025-07-23 16:26:16,116 - INFO - TTS queued: System shutting down
+2025-07-23 16:26:16,117 - INFO - Stopping optimized door control system...
+2025-07-23 16:26:16,117 - INFO - MQTT client disconnected
+2025-07-23 16:26:16,117 - INFO - MQTT streaming stopped
+2025-07-23 16:26:16,479 - ERROR - Pygame TTS error: Audio device hasn't been opened
+2025-07-23 16:26:16,480 - INFO - Falling back to system audio commands
+2025-07-23 16:27:19,432 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:27:19,435 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-23 16:27:19,467 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-23 16:27:19,478 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-23 16:27:19,479 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-23 16:27:19,479 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:27:19,551 - INFO - Haar cascade face detector initialized
+2025-07-23 16:27:19,552 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:27:19,553 - INFO - TTS queued: Setting up web camera
+2025-07-23 16:27:20,427 - INFO - Webcam initialized successfully
+2025-07-23 16:27:20,429 - INFO - TTS queued: Web camera ready
+2025-07-23 16:27:20,430 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:27:20,430 - INFO - Optimized door control system starting...
+2025-07-23 16:27:20,430 - INFO - Face detection enabled using haar method
+2025-07-23 16:27:20,431 - INFO - TTS queued: Face detection enabled using haar
+2025-07-23 16:27:20,557 - INFO - TLS enabled for MQTT connection
+2025-07-23 16:27:20,557 - INFO - MQTT authentication set for user: chanel
+2025-07-23 16:27:21,172 - INFO - MQTT client initialized for de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:27:21,173 - INFO - Started MQTT streaming to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:27:21,173 - INFO - TTS queued: MQTT streaming started
+2025-07-23 16:27:21,217 - INFO - API connectivity confirmed
+2025-07-23 16:27:21,230 - INFO - TTS queued: Server connected
+2025-07-23 16:27:21,233 - INFO - TTS queued: Automatic mode activated with face detection
+2025-07-23 16:27:21,235 - WARNING - TTS queue was full, cleared old messages
+2025-07-23 16:27:21,235 - INFO - Starting automatic capture mode with face detection
+2025-07-23 16:27:21,365 - INFO - MQTT client connected to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883
+2025-07-23 16:27:30,398 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:30,399 - INFO - Request req_1_b25a538c starting API call
+2025-07-23 16:27:30,399 - INFO - Request req_1_b25a538c submitted immediately
+2025-07-23 16:27:30,402 - INFO - System status: 1 active, 0 pending requests
+2025-07-23 16:27:32,637 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:32,638 - INFO - Request req_2_b472cd14 starting API call
+2025-07-23 16:27:32,645 - INFO - Request req_2_b472cd14 submitted immediately
+2025-07-23 16:27:32,647 - INFO - System status: 2 active, 0 pending requests
+2025-07-23 16:27:34,870 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:34,879 - INFO - Request req_3_9ab697c3 starting API call
+2025-07-23 16:27:34,879 - INFO - Request req_3_9ab697c3 submitted immediately
+2025-07-23 16:27:34,881 - INFO - System status: 3 active, 0 pending requests
+2025-07-23 16:27:37,101 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:37,102 - INFO - Request req_4_44d544bb queued (position: 1)
+2025-07-23 16:27:37,102 - INFO - System status: 3 active, 1 pending requests
+2025-07-23 16:27:39,347 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:39,350 - INFO - Request req_5_d678fd98 queued (position: 2)
+2025-07-23 16:27:39,350 - INFO - System status: 3 active, 2 pending requests
+2025-07-23 16:27:41,571 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:41,571 - INFO - Request req_6_69200dc5 queued (position: 3)
+2025-07-23 16:27:41,572 - INFO - System status: 3 active, 3 pending requests
+2025-07-23 16:27:43,806 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:43,808 - INFO - Request req_7_3aa2b289 queued (position: 4)
+2025-07-23 16:27:43,814 - INFO - System status: 3 active, 4 pending requests
+2025-07-23 16:27:46,100 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:46,100 - INFO - Request req_8_c536e965 queued (position: 5)
+2025-07-23 16:27:46,101 - INFO - System status: 3 active, 5 pending requests
+2025-07-23 16:27:48,356 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:48,356 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:27:48,356 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:27:48,356 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:27:48,357 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:27:48,357 - WARNING - Failed to submit verification request
+2025-07-23 16:27:50,594 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:50,594 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:27:50,595 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:27:50,595 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:27:50,595 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:27:50,596 - WARNING - Failed to submit verification request
+2025-07-23 16:27:52,908 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:52,908 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:27:52,909 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:27:52,909 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:27:52,911 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:27:52,914 - WARNING - Failed to submit verification request
+2025-07-23 16:27:55,127 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:55,128 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:27:55,129 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:27:55,130 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:27:55,130 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:27:55,130 - WARNING - Failed to submit verification request
+2025-07-23 16:27:57,439 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:57,443 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:27:57,443 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:27:57,443 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:27:57,443 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:27:57,444 - WARNING - Failed to submit verification request
+2025-07-23 16:27:59,826 - INFO - Face detected - proceeding with verification
+2025-07-23 16:27:59,829 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:27:59,830 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:27:59,831 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:27:59,832 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:27:59,833 - WARNING - Failed to submit verification request
+2025-07-23 16:28:04,374 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:04,374 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:28:04,374 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:28:04,375 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:28:04,375 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:28:04,375 - WARNING - Failed to submit verification request
+2025-07-23 16:28:06,642 - INFO - Received interrupt signal
+2025-07-23 16:28:06,643 - INFO - TTS queued: System shutting down
+2025-07-23 16:28:06,643 - INFO - Stopping optimized door control system...
+2025-07-23 16:28:06,643 - INFO - System Statistics:
+2025-07-23 16:28:06,643 - INFO -   Total captures: 20
+2025-07-23 16:28:06,643 - INFO -   Faces detected: 15
+2025-07-23 16:28:06,644 - INFO -   API calls made: 8
+2025-07-23 16:28:06,644 - INFO -   API calls saved: 4
+2025-07-23 16:28:06,644 - INFO -   Efficiency: 20.0% calls saved
+2025-07-23 16:28:06,644 - INFO -   Frames streamed: 20
+2025-07-23 16:28:06,835 - INFO - MQTT client disconnected
+2025-07-23 16:28:06,835 - INFO - MQTT streaming stopped
+2025-07-23 16:28:06,835 - INFO - TTS queued: MQTT streaming stopped
+2025-07-23 16:28:06,909 - INFO - System stopped
+2025-07-23 16:28:06,909 - INFO - TTS queued: System shutting down
+2025-07-23 16:28:06,910 - INFO - Stopping optimized door control system...
+2025-07-23 16:28:06,910 - INFO - System Statistics:
+2025-07-23 16:28:06,910 - INFO -   Total captures: 20
+2025-07-23 16:28:06,910 - INFO -   Faces detected: 15
+2025-07-23 16:28:06,910 - INFO -   API calls made: 8
+2025-07-23 16:28:06,920 - INFO -   API calls saved: 4
+2025-07-23 16:28:06,921 - INFO -   Efficiency: 20.0% calls saved
+2025-07-23 16:28:06,921 - INFO -   Frames streamed: 20
+2025-07-23 16:28:06,921 - INFO - MQTT client disconnected
+2025-07-23 16:28:06,921 - INFO - MQTT streaming stopped
+2025-07-23 16:28:06,921 - INFO - TTS queued: MQTT streaming stopped
+2025-07-23 16:28:06,922 - INFO - System stopped
+2025-07-23 16:28:11,116 - INFO - Request req_1_b25a538c completed in 40.72s
+2025-07-23 16:28:11,120 - WARNING - Request req_1_b25a538c failed with status 500
+2025-07-23 16:28:11,161 - INFO - Request req_1_b25a538c processed in 40.76s total
+2025-07-23 16:28:11,164 - WARNING - Verification failed - no result
+2025-07-23 16:28:11,164 - INFO - TTS queued: Access denied. Verification failed
+2025-07-23 16:28:11,164 - WARNING - TTS queue was full, cleared old messages
+2025-07-23 16:28:11,164 - INFO - Access denied: Verification failed (simulated)
+2025-07-23 16:28:11,165 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:28:11,196 - INFO - Request req_2_b472cd14 completed in 38.56s
+2025-07-23 16:28:11,197 - WARNING - Request req_2_b472cd14 failed with status 500
+2025-07-23 16:28:12,172 - INFO - Request req_2_b472cd14 processed in 39.53s total
+2025-07-23 16:28:12,174 - WARNING - Verification failed - no result
+2025-07-23 16:28:12,174 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:28:12,175 - INFO - TTS queued: Access denied. Verification failed
+2025-07-23 16:28:12,175 - INFO - Access denied: Verification failed (simulated)
+2025-07-23 16:28:13,175 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:28:14,177 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:28:14,637 - INFO - Request req_3_9ab697c3 completed in 39.76s
+2025-07-23 16:28:14,784 - ERROR - Pygame TTS error: Audio device hasn't been opened
+2025-07-23 16:28:14,792 - INFO - Falling back to system audio commands
+2025-07-23 16:28:18,821 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:28:18,823 - INFO - TTS queued: Starting optimized door control application with HiveMQ MQTT streaming
+2025-07-23 16:28:18,829 - INFO - Configuration: API=http://192.168.5.41:3000/api, Timeout=45s, Concurrent=3, Image=640x480
+2025-07-23 16:28:18,830 - INFO - Face Detection: Enabled, Method=haar, Size=(50, 50)-(400, 400)
+2025-07-23 16:28:18,830 - INFO - HiveMQ MQTT Streaming: Disabled, Broker=de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, Topic=door/stream, TLS=Enabled, FPS=2, Resolution=640x480
+2025-07-23 16:28:18,830 - INFO - TTS queued: Initializing optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:28:18,894 - INFO - Haar cascade face detector initialized
+2025-07-23 16:28:18,894 - INFO - Pygame mixer initialized successfully
+2025-07-23 16:28:18,895 - INFO - TTS queued: Setting up web camera
+2025-07-23 16:28:19,764 - INFO - Webcam initialized successfully
+2025-07-23 16:28:19,775 - INFO - TTS queued: Web camera ready
+2025-07-23 16:28:19,776 - INFO - TTS queued: Starting optimized door control system with HiveMQ MQTT streaming
+2025-07-23 16:28:19,777 - INFO - Optimized door control system starting...
+2025-07-23 16:28:19,779 - INFO - Face detection enabled using haar method
+2025-07-23 16:28:19,779 - INFO - TTS queued: Face detection enabled using haar
+2025-07-23 16:28:19,899 - INFO - TLS enabled for MQTT connection
+2025-07-23 16:28:19,900 - INFO - MQTT authentication set for user: chanel
+2025-07-23 16:28:20,689 - INFO - MQTT client initialized for de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:28:20,690 - INFO - Started MQTT streaming to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883, topic: door/stream
+2025-07-23 16:28:20,690 - INFO - TTS queued: MQTT streaming started
+2025-07-23 16:28:20,799 - INFO - API connectivity confirmed
+2025-07-23 16:28:20,803 - INFO - TTS queued: Server connected
+2025-07-23 16:28:20,805 - INFO - TTS queued: Automatic mode activated with face detection
+2025-07-23 16:28:20,809 - WARNING - TTS queue was full, cleared old messages
+2025-07-23 16:28:20,810 - INFO - Starting automatic capture mode with face detection
+2025-07-23 16:28:20,877 - INFO - MQTT client connected to de7ccf69e70f4ffea025b868e4f08223.s1.eu.hivemq.cloud:8883
+2025-07-23 16:28:20,878 - INFO - TTS queued: MQTT streaming connected
+2025-07-23 16:28:33,815 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:33,817 - INFO - Request req_1_85959242 starting API call
+2025-07-23 16:28:33,817 - INFO - Request req_1_85959242 submitted immediately
+2025-07-23 16:28:33,821 - INFO - System status: 1 active, 0 pending requests
+2025-07-23 16:28:35,965 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:35,967 - INFO - Request req_2_9964f08f starting API call
+2025-07-23 16:28:35,968 - INFO - Request req_2_9964f08f submitted immediately
+2025-07-23 16:28:35,968 - INFO - System status: 2 active, 0 pending requests
+2025-07-23 16:28:38,172 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:38,175 - INFO - Request req_3_50c3d3be starting API call
+2025-07-23 16:28:38,175 - INFO - Request req_3_50c3d3be submitted immediately
+2025-07-23 16:28:38,181 - INFO - System status: 3 active, 0 pending requests
+2025-07-23 16:28:40,461 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:40,465 - INFO - Request req_4_d342df15 queued (position: 1)
+2025-07-23 16:28:40,465 - INFO - System status: 3 active, 1 pending requests
+2025-07-23 16:28:42,713 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:42,713 - INFO - Request req_5_c2ce8722 queued (position: 2)
+2025-07-23 16:28:42,713 - INFO - System status: 3 active, 2 pending requests
+2025-07-23 16:28:44,997 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:44,997 - INFO - Request req_6_00d9f7b8 queued (position: 3)
+2025-07-23 16:28:44,997 - INFO - System status: 3 active, 3 pending requests
+2025-07-23 16:28:47,563 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:47,564 - INFO - Request req_7_539cfbc1 queued (position: 4)
+2025-07-23 16:28:47,564 - INFO - System status: 3 active, 4 pending requests
+2025-07-23 16:28:52,038 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:52,038 - INFO - Request req_8_2e0ff789 queued (position: 5)
+2025-07-23 16:28:52,040 - INFO - System status: 3 active, 5 pending requests
+2025-07-23 16:28:53,206 - INFO - Request req_1_85959242 completed in 19.39s
+2025-07-23 16:28:53,206 - WARNING - Request req_1_85959242 failed with status 500
+2025-07-23 16:28:53,225 - INFO - Request req_1_85959242 processed in 19.41s total
+2025-07-23 16:28:53,233 - WARNING - Verification failed - no result
+2025-07-23 16:28:53,234 - INFO - Request req_4_d342df15 started from queue (waited 12.77s)
+2025-07-23 16:28:53,237 - INFO - TTS queued: Access denied. Verification failed
+2025-07-23 16:28:53,238 - INFO - Request req_4_d342df15 starting API call
+2025-07-23 16:28:53,239 - INFO - Access denied: Verification failed (simulated)
+2025-07-23 16:28:54,282 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:54,282 - INFO - Request req_9_5d5a3082 queued (position: 5)
+2025-07-23 16:28:54,283 - INFO - System status: 3 active, 5 pending requests
+2025-07-23 16:28:56,678 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:56,678 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:28:56,678 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:28:56,678 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:28:56,679 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:28:56,679 - WARNING - Failed to submit verification request
+2025-07-23 16:28:59,120 - INFO - Face detected - proceeding with verification
+2025-07-23 16:28:59,121 - WARNING - Request rejected - queue full (5 pending)
+2025-07-23 16:28:59,121 - ERROR - Verification error: Queue full - system overloaded
+2025-07-23 16:28:59,122 - INFO - TTS queued: Access denied. System error: Queue full - system overloaded
+2025-07-23 16:28:59,122 - INFO - Access denied: System error: Queue full - system overloaded (simulated)
+2025-07-23 16:28:59,122 - WARNING - Failed to submit verification request
+2025-07-23 16:29:00,467 - INFO - Received interrupt signal
+2025-07-23 16:29:00,467 - INFO - TTS queued: System shutting down
+2025-07-23 16:29:00,468 - INFO - Stopping optimized door control system...
+2025-07-23 16:29:00,469 - INFO - System Statistics:
+2025-07-23 16:29:00,469 - INFO -   Total captures: 17
+2025-07-23 16:29:00,469 - INFO -   Faces detected: 11
+2025-07-23 16:29:00,470 - INFO -   API calls made: 9
+2025-07-23 16:29:00,470 - INFO -   API calls saved: 6
+2025-07-23 16:29:00,470 - INFO -   Efficiency: 35.3% calls saved
+2025-07-23 16:29:00,470 - INFO -   Frames streamed: 17
+2025-07-23 16:29:01,327 - INFO - MQTT client disconnected
+2025-07-23 16:29:01,328 - INFO - MQTT streaming stopped
+2025-07-23 16:29:01,329 - INFO - TTS queued: MQTT streaming stopped
+2025-07-23 16:29:01,388 - INFO - System stopped
+2025-07-23 16:29:01,389 - INFO - TTS queued: System shutting down
+2025-07-23 16:29:01,389 - INFO - Stopping optimized door control system...
+2025-07-23 16:29:01,389 - INFO - System Statistics:
+2025-07-23 16:29:01,389 - INFO -   Total captures: 17
+2025-07-23 16:29:01,389 - INFO -   Faces detected: 11
+2025-07-23 16:29:01,389 - INFO -   API calls made: 9
+2025-07-23 16:29:01,390 - INFO -   API calls saved: 6
+2025-07-23 16:29:01,390 - INFO -   Efficiency: 35.3% calls saved
+2025-07-23 16:29:01,390 - INFO -   Frames streamed: 17
+2025-07-23 16:29:01,390 - INFO - MQTT client disconnected
+2025-07-23 16:29:01,390 - INFO - MQTT streaming stopped
+2025-07-23 16:29:01,395 - INFO - TTS queued: MQTT streaming stopped
+2025-07-23 16:29:01,395 - INFO - System stopped
+2025-07-23 16:29:04,237 - INFO - Request req_2_9964f08f completed in 28.27s
+2025-07-23 16:29:04,237 - WARNING - Request req_2_9964f08f failed with status 500
+2025-07-23 16:29:04,279 - INFO - Request req_2_9964f08f processed in 28.31s total
+2025-07-23 16:29:04,280 - WARNING - Verification failed - no result
+2025-07-23 16:29:04,281 - INFO - TTS queued: Access denied. Verification failed
+2025-07-23 16:29:04,280 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:29:04,281 - INFO - Access denied: Verification failed (simulated)
+2025-07-23 16:29:05,281 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:29:06,282 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:29:07,283 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:29:08,288 - ERROR - Request processor error: cannot schedule new futures after shutdown
+2025-07-23 16:29:13,536 - INFO - Request req_3_50c3d3be completed in 35.36s
+2025-07-23 16:29:13,608 - INFO - Request req_3_50c3d3be processed in 35.43s total
+2025-07-23 16:29:13,612 - WARNING - ACCESS DENIED - Reason: No face detected in the image
+2025-07-23 16:29:13,615 - INFO - TTS queued: Access denied. No face detected in the image
+2025-07-23 16:29:13,617 - INFO - Access denied: No face detected in the image (simulated)
+2025-07-23 16:29:14,726 - INFO - Request req_4_d342df15 completed in 21.49s
+2025-07-23 16:29:14,820 - INFO - Request req_4_d342df15 processed in 21.59s total
+2025-07-23 16:29:14,827 - WARNING - ACCESS DENIED - Reason: No face detected in the image
+2025-07-23 16:29:14,828 - INFO - TTS queued: Access denied. No face detected in the image
+2025-07-23 16:29:14,829 - INFO - Access denied: No face detected in the image (simulated)

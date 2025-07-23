@@ -6,8 +6,9 @@ from threading import Thread, Event
 import paho.mqtt.client as mqtt
 import ssl
 from config import *
-from text_to_speech import TextToSpeech as tts
+from text_to_speech import TextToSpeech 
 import uuid
+import time
 
 logger = logging.getLogger(__name__)
 
@@ -31,14 +32,16 @@ class LiveStream:
         self.stop_event = Event()
         self.stream_thread = None
         self.mqtt_client = None
+        self.tts = TextToSpeech()  # Create an instance
+
 
     def on_connect(self, client, userdata, flags, rc, properties=None):
         if rc == 0:
             logger.info(f"MQTT client connected to {self.broker_host}:{self.broker_port}")
-            tts.speak("MQTT streaming connected")
+            self.tts.speak("MQTT streaming connected")
         else:
             logger.error(f"MQTT connection failed with code {rc}")
-            tts.speak(f"MQTT connection failed: {rc}")
+            self.tts.speak(f"MQTT connection failed: {rc}")
 
     def setup_mqtt_client(self):
         try:
@@ -55,7 +58,7 @@ class LiveStream:
             logger.info(f"MQTT client initialized for {self.broker_host}:{self.broker_port}, topic: {self.topic}")
         except Exception as e:
             logger.error(f"Failed to initialize MQTT client: {e}")
-            tts.speak("MQTT client setup failed")
+            self.tts.speak("MQTT client setup failed")
             self.mqtt_client = None
 
     def send_frame(self, frame_data):
@@ -133,7 +136,7 @@ class LiveStream:
         self.stream_thread.daemon = True
         self.stream_thread.start()
         logger.info(f"Started MQTT streaming to {self.broker_host}:{self.broker_port}, topic: {self.topic}")
-        tts.speak("MQTT streaming started")
+        self.tts.speak("MQTT streaming started")
 
     def stop(self):
         self.running = False
@@ -145,4 +148,4 @@ class LiveStream:
             self.mqtt_client.disconnect()
             logger.info("MQTT client disconnected")
         logger.info("MQTT streaming stopped")
-        tts.speak("MQTT streaming stopped")
+        self.tts.speak("MQTT streaming stopped")
