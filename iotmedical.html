@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Médical Afrique - Composants et Projets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #2196F3, #21CBF3);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #666;
+            transition: all 0.3s ease;
+        }
+
+        .tab.active {
+            background: white;
+            color: #2196F3;
+            border-bottom: 3px solid #2196F3;
+        }
+
+        .tab:hover {
+            background: rgba(33, 150, 243, 0.1);
+        }
+
+        .content {
+            padding: 30px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        th {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        tr:hover {
+            background: rgba(33, 150, 243, 0.05);
+        }
+
+        .category-header {
+            background: #f8f9fa !important;
+            font-weight: bold;
+            color: #333;
+            font-style: italic;
+        }
+
+        .price {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #2196F3;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-title {
+            color: #2196F3;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .project-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .detail-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            color: #666;
+        }
+
+        .download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(76, 175, 80, 0.4);
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #2196F3;
+        }
+
+        @media (max-width: 768px) {
+            .tabs {
+                flex-direction: column;
+            }
+            
+            .project-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 IoT Médical Afrique</h1>
+            <p>Guide complet des composants et projets pour l'industrie IoT médicale</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('components')">📦 Composants</button>
+            <button class="tab" onclick="showTab('projects')">🚀 Projets</button>
+            <button class="tab" onclick="showTab('kits')">🛠️ Kits de Démarrage</button>
+        </div>
+
+        <div class="content">
+            <!-- Composants Tab -->
+            <div id="components" class="tab-content active">
+                <input type="text" class="search-box" placeholder="🔍 Rechercher un composant..." onkeyup="filterTable(this, 'components-table')">
+                
+                <table id="components-table">
+                    <thead>
+                        <tr>
+                            <th>Catégorie</th>
+                            <th>Composant</th>
+                            <th>Description</th>
+                            <th>Prix (USD)</th>
+                            <th>Fournisseur</th>
+                            <th>Usage Principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="category-header">
+                            <td colspan="6">🧠 MICROCONTRÔLEURS</td>
+                        </tr>
+                        <tr>
+                            <td>MCU</td>
+                            <td>ESP32 DevKit</td>
+                            <td>WiFi/Bluetooth, 32-bit, 240MHz</td>
+                            <td class="price">$8-12</td>
+                            <td>AliExpress, Mouser</td>
+                            <td>Projets connectés</td>
+                        </tr>
+                        <tr>
+                            <td>MCU</td>
+                            <td>Arduino Nano 33 IoT</td>
+                            <td>WiFi intégré, capteurs IMU</td>
+                            <td class="price">$18-25</td>
+                            <td>Arduino Store</td>
+                            <td>Prototypage rapide</td>
+                        </tr>
+                        <tr>
+                            <td>MCU</td>
+                            <td>STM32L4 (ultra low power)</td>
+                            <td>ARM Cortex-M4, très faible conso</td>
+                            <td class="price">$5-15</td>
+                            <td>ST Electronics</td>
+                            <td>Dispositifs portables</td>
+                        </tr>
+                        <tr class="category-header">
+                            <td colspan="6">📡 CAPTEURS MÉDICAUX</td>
+                        </tr>
+                        <tr>
+                            <td>Capteur</td>
+                            <td>MAX30102</td>
+                            <td>Oxymètre de pouls + rythme cardiaque</td>
+                            <td class="price">$6-10</td>
+                            <td>Maxim, AliExpress</td>
+                            <td>Monitoring cardiaque</td>
+                        </tr>
+                        <tr>
+                            <td>Capteur</td>
+                            <td>DS18B20</td>
+                            <td>Température haute précision</td>
+                            <td class="price">$2-4</td>
+                            <td>Dallas Semi</td>
+                            <td>Température corporelle</td>
+                        </tr>
+                        <tr>
+                            <td>Capteur</td>
+                            <td>MPU6050</td>
+                            <td>Accéléromètre + Gyroscope 6-axis</td>
+                            <td class="price">$3-5</td>
+                            <td>InvenSense</td>
+                            <td>Détection chutes</td>
+                        </tr>
+                        <tr>
+                            <td>Capteur</td>
+                            <td>HX711 + Load Cell</td>
+                            <td>Balance de précision</td>
+                            <td class="price">$8-12</td>
+                            <td>AliExpress</td>
+                            <td>Monitoring poids</td>
+                        </tr>
+                        <tr>
+                            <td>Capteur</td>
+                            <td>SHT30</td>
+                            <td>Température/Humidité précise</td>
+                            <td class="price">$4-7</td>
+                            <td>Sensirion</td>
+                            <td>Conditions ambiantes</td>
+                        </tr>
+                        <tr class="category-header">
+                            <td colspan="6">📶 CONNECTIVITÉ</td>
+                        </tr>
+                        <tr>
+                            <td>Comm</td>
+                            <td>SIM800L (2G/GSM)</td>
+                            <td>Module cellulaire basique</td>
+                            <td class="price">$8-15</td>
+                            <td>SIMCom</td>
+                            <td>Zones rurales</td>
+                        </tr>
+                        <tr>
+                            <td>Comm</td>
+                            <td>SIM7600 (4G/LTE)</td>
+                            <td>Module cellulaire haute vitesse</td>
+                            <td class="price">$25-40</td>
+                            <td>SIMCom</td>
+                            <td>Transmission données</td>
+                        </tr>
+                        <tr>
+                            <td>Comm</td>
+                            <td>LoRa RFM95W</td>
+                            <td>Longue portée, faible puissance</td>
+                            <td class="price">$12-20</td>
+                            <td>HopeRF</td>
+                            <td>Réseau de capteurs</td>
+                        </tr>
+                        <tr>
+                            <td>Comm</td>
+                            <td>HC-05 Bluetooth</td>
+                            <td>Bluetooth Classic SPP</td>
+                            <td class="price">$3-6</td>
+                            <td>AliExpress</td>
+                            <td>Connexion locale</td>
+                        </tr>
+                        <tr class="category-header">
+                            <td colspan="6">🔋 ALIMENTATION</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>Batterie LiPo 3.7V</td>
+                            <td>1000-5000mAh rechargeable</td>
+                            <td class="price">$5-15</td>
+                            <td>Locaux</td>
+                            <td>Alimentation portable</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>Module TP4056</td>
+                            <td>Chargeur LiPo avec protection</td>
+                            <td class="price">$1-3</td>
+                            <td>AliExpress</td>
+                            <td>Charge sécurisée</td>
+                        </tr>
+                        <tr>
+                            <td>Power</td>
+                            <td>Panneau solaire 5V</td>
+                            <td>1-5W pour zones sans électricité</td>
+                            <td class="price">$8-25</td>
+                            <td>Locaux</td>
+                            <td>Autonomie énergétique</td>
+                        </tr>
+                        <tr class="category-header">
+                            <td colspan="6">🖥️ INTERFACE UTILISATEUR</td>
+                        </tr>
+                        <tr>
+                            <td>Display</td>
+                            <td>OLED 0.96" I2C</td>
+                            <td>128x64, faible consommation</td>
+                            <td class="price">$4-8</td>
+                            <td>AliExpress</td>
+                            <td>Affichage compact</td>
+                        </tr>
+                        <tr>
+                            <td>Display</td>
+                            <td>LCD 16x2</td>
+                            <td>Affichage texte basique</td>
+                            <td class="price">$3-6</td>
+                            <td>Local</td>
+                            <td>Interface simple</td>
+                        </tr>
+                        <tr>
+                            <td>Interface</td>
+                            <td>Buzzer actif</td>
+                            <td>Alarmes sonores</td>
+                            <td class="price">$1-2</td>
+                            <td>Local</td>
+                            <td>Alertes audio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Projets Tab -->
+            <div id="projects" class="tab-content">
+                <input type="text" class="search-box" placeholder="🔍 Rechercher un projet..." onkeyup="filterProjects(this)">
+                
+                <div class="project-card" data-keywords="monitoring patient télémédecine">
+                    <div class="project-title">1. 📊 Système de Monitoring Patient à Distance</div>
+                    <div class="project-description">
+                        Dispositif portable pour surveiller les signes vitaux (rythme cardiaque, SpO2, température) et transmettre les données en temps réel aux centres de santé. Idéal pour le suivi des patients chroniques en zones rurales.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">ESP32, MAX30102, DS18B20, SIM800L, Batterie LiPo</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$80-120 par station</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Communautés rurales, ONG, gouvernements locaux</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">4-5 mois</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kits Tab -->
+            <div id="kits" class="tab-content">
+                <div class="project-card">
+                    <div class="project-title">🎯 Kit Débutant - Prototype Rapide</div>
+                    <div class="project-description">
+                        Kit idéal pour commencer et développer votre premier prototype IoT médical. Parfait pour démonstrations et tests de concept.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Inclus</div>
+                            <div class="detail-value">
+                                • ESP32 DevKit C<br>
+                                • Capteur MAX30102 (pouls/SpO2)<br>
+                                • Capteur DS18B20 (température)<br>
+                                • OLED 0.96" I2C<br>
+                                • Module SIM800L<br>
+                                • Batterie LiPo 2000mAh + chargeur<br>
+                                • Breadboards, câbles, résistances<br>
+                                • Boîtier plastique basique
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Prix Total</div>
+                            <div class="detail-value">$85-120</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Projets Possibles</div>
+                            <div class="detail-value">Monitoring patient basique, détecteur température</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Niveau</div>
+                            <div class="detail-value">Débutant à Intermédiaire</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">🚀 Kit Professionnel - Développement Avancé</div>
+                    <div class="project-description">
+                        Kit complet pour développer des solutions IoT médicales professionnelles avec multiple options de connectivité et capteurs spécialisés.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Inclus</div>
+                            <div class="detail-value">
+                                • ESP32 + STM32L4 + Arduino Nano 33 IoT<br>
+                                • Capteurs médicaux complets (MAX30102, DS18B20, MPU6050, HX711)<br>
+                                • Modules SIM800L + SIM7600 + LoRa<br>
+                                • Écrans OLED + LCD + E-paper<br>
+                                • Batteries diverses + panneaux solaires<br>
+                                • Outils de mesure (multimètre, oscilloscope USB)<br>
+                                • PCB prototyping + composants SMD<br>
+                                • Boîtiers étanches professionnels
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Prix Total</div>
+                            <div class="detail-value">$350-500</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Projets Possibles</div>
+                            <div class="detail-value">Tous les 10 projets listés</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Niveau</div>
+                            <div class="detail-value">Avancé à Expert</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">🏭 Kit Production - Fabrication en Série</div>
+                    <div class="project-description">
+                        Kit orienté production incluant outils de fabrication, tests et certification pour passer du prototype à la commercialisation.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Équipements Inclus</div>
+                            <div class="detail-value">
+                                • Station de soudure SMD professionnelle<br>
+                                • Imprimante 3D pour boîtiers<br>
+                                • Équipements de test et calibration<br>
+                                • Logiciels de design PCB (licence)<br>
+                                • Composants en volume (100+ unités)<br>
+                                • Outils de certification médicale<br>
+                                • Formation développement produit
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Prix Total</div>
+                            <div class="detail-value">$2,000-3,500</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Capacité</div>
+                            <div class="detail-value">Production 500+ unités/mois</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Niveau</div>
+                            <div class="detail-value">Entrepreneur/Start-up</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">📚 Ressources et Formation</div>
+                    <div class="project-description">
+                        Ressources complémentaires essentielles pour réussir dans l'IoT médical en Afrique.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Documentation Technique</div>
+                            <div class="detail-value">
+                                • Guides de développement par projet<br>
+                                • Schemas électroniques complets<br>
+                                • Code source commenté<br>
+                                • Tests et validation<br>
+                                • Troubleshooting guide
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Formation Business</div>
+                            <div class="detail-value">
+                                • Étude de marché Afrique<br>
+                                • Modèles économiques IoT médical<br>
+                                • Réglementation médicale locale<br>
+                                • Stratégies de financement<br>
+                                • Réseau partenaires et fournisseurs
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Support Technique</div>
+                            <div class="detail-value">
+                                • 6 mois support email<br>
+                                • Sessions de mentoring<br>
+                                • Accès communauté développeurs<br>
+                                • Mises à jour firmware<br>
+                                • Assistance certification
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Investissement</div>
+                            <div class="detail-value">Inclus avec Kit Professionnel+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="download-btn" onclick="downloadAsExcel()">
+        📥 Télécharger Excel
+    </button>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        function filterTable(input, tableId) {
+            const filter = input.value.toUpperCase();
+            const table = document.getElementById(tableId);
+            const rows = table.getElementsByTagName('tr');
+            
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                if (row.classList.contains('category-header')) continue;
+                
+                let shouldShow = false;
+                const cells = row.getElementsByTagName('td');
+                
+                for (let j = 0; j < cells.length; j++) {
+                    const cell = cells[j];
+                    if (cell.textContent.toUpperCase().indexOf(filter) > -1) {
+                        shouldShow = true;
+                        break;
+                    }
+                }
+                
+                row.style.display = shouldShow ? '' : 'none';
+            }
+        }
+
+        function filterProjects(input) {
+            const filter = input.value.toLowerCase();
+            const projects = document.querySelectorAll('.project-card');
+            
+            projects.forEach(project => {
+                const title = project.querySelector('.project-title').textContent.toLowerCase();
+                const description = project.querySelector('.project-description').textContent.toLowerCase();
+                const keywords = project.getAttribute('data-keywords') || '';
+                
+                const shouldShow = title.includes(filter) || 
+                                 description.includes(filter) || 
+                                 keywords.includes(filter);
+                
+                project.style.display = shouldShow ? 'block' : 'none';
+            });
+        }
+
+        function downloadAsExcel() {
+            // Créer le contenu Excel
+            let excelContent = `Catégorie,Composant,Description,Prix (USD),Fournisseur,Usage Principal
+MICROCONTRÔLEURS
+MCU,ESP32 DevKit,WiFi/Bluetooth 32-bit 240MHz,$8-12,AliExpress Mouser,Projets connectés
+MCU,Arduino Nano 33 IoT,WiFi intégré capteurs IMU,$18-25,Arduino Store,Prototypage rapide
+MCU,STM32L4 (ultra low power),ARM Cortex-M4 très faible conso,$5-15,ST Electronics,Dispositifs portables
+CAPTEURS MÉDICAUX
+Capteur,MAX30102,Oxymètre de pouls + rythme cardiaque,$6-10,Maxim AliExpress,Monitoring cardiaque
+Capteur,DS18B20,Température haute précision,$2-4,Dallas Semi,Température corporelle
+Capteur,MPU6050,Accéléromètre + Gyroscope 6-axis,$3-5,InvenSense,Détection chutes
+Capteur,HX711 + Load Cell,Balance de précision,$8-12,AliExpress,Monitoring poids
+Capteur,SHT30,Température/Humidité précise,$4-7,Sensirion,Conditions ambiantes
+CONNECTIVITÉ
+Comm,SIM800L (2G/GSM),Module cellulaire basique,$8-15,SIMCom,Zones rurales
+Comm,SIM7600 (4G/LTE),Module cellulaire haute vitesse,$25-40,SIMCom,Transmission données
+Comm,LoRa RFM95W,Longue portée faible puissance,$12-20,HopeRF,Réseau de capteurs
+Comm,HC-05 Bluetooth,Bluetooth Classic SPP,$3-6,AliExpress,Connexion locale
+ALIMENTATION
+Power,Batterie LiPo 3.7V,1000-5000mAh rechargeable,$5-15,Locaux,Alimentation portable
+Power,Module TP4056,Chargeur LiPo avec protection,$1-3,AliExpress,Charge sécurisée
+Power,Panneau solaire 5V,1-5W pour zones sans électricité,$8-25,Locaux,Autonomie énergétique
+INTERFACE UTILISATEUR
+Display,OLED 0.96" I2C,128x64 faible consommation,$4-8,AliExpress,Affichage compact
+Display,LCD 16x2,Affichage texte basique,$3-6,Local,Interface simple
+Interface,Buzzer actif,Alarmes sonores,$1-2,Local,Alertes audio
+
+PROJETS IOT MÉDICAUX
+
+Nom du Projet,Description,Composants Clés,Coût Estimé,Marché Cible,Temps Développement
+1. Monitoring Patient à Distance,Surveillance signes vitaux temps réel,ESP32 MAX30102 DS18B20 SIM800L Batterie LiPo,$35-50,Cliniques rurales patients chroniques,2-3 mois
+2. Distributeur Intelligent Médicaments,Rappels automatiques et vérification dosages,Arduino Nano 33 IoT Servo moteurs Capteurs poids OLED Buzzer,$40-60,Diabétiques hypertendus personnes âgées,3-4 mois
+3. Monitoring Chaîne du Froid Vaccins,Surveillance température réfrigérateurs vaccins,ESP32 DS18B20 étanche SIM800L Relais Batterie backup,$25-35,Centres vaccination OMS gouvernements,1-2 mois
+4. Microscope Portable Connecté,Diagnostic paludisme tuberculose avec IA,Raspberry Pi 4 Caméra haute résolution Lentilles LED SIM7600,$150-250,Laboratoires ruraux cliniques mobiles,6-8 mois
+5. Détecteur Chutes Personnes Âgées,Alerte automatique chutes avec géolocalisation,ESP32 MPU6050 GPS NEO-6M SIM800L Batterie LiPo,$30-45,Personnes âgées familles maisons retraite,2-3 mois
+6. Tests Rapides Connectés,Lecture automatique tests VIH paludisme COVID,ESP32-CAM Éclairage LED Lentille macro Module crypto SIM800L,$60-80,Centres dépistage ONG ministères santé,4-6 mois
+7. Localisation Équipements Médicaux,Géolocalisation temps réel équipements hôpital,ESP32 Beacons BLE Tags RFID Interface web Base données,$15-25,Hôpitaux cliniques privées,3-4 mois
+8. Monitoring Qualité Air Médical,Surveillance air pour prévenir infections nosocomiales,ESP32 MQ135 SDS011 SHT30 LoRa Dashboard web,$45-65,Hôpitaux blocs opératoires EHPAD,2-3 mois
+9. Kit Télémédecine Portable,Consultations médicales distance haute qualité,Raspberry Pi 4 Caméra 4K Micro Stéthoscope digital Écran tactile,$300-500,Médecins ruraux ONG cliniques mobiles,6-8 mois
+10. Monitoring Qualité Eau Potable,Surveillance continue qualité eau communautés,ESP32 Capteurs pH TDS Turbidité Chlore Panneau solaire SIM800L,$80-120,Communautés rurales ONG gouvernements locaux,4-5 mois`;
+
+            // Créer et télécharger le fichier
+            const blob = new Blob([excelContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'IoT_Medical_Africa_Components_Projects.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            alert('📥 Fichier téléchargé avec succès!\n\nLe fichier CSV peut être ouvert dans Excel, Google Sheets ou LibreOffice Calc.');
+        }
+
+        // Animation d'entrée pour les cartes de projet
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer toutes les cartes de projet
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+                            <div class="detail-value">$35-50 par unité</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Cliniques rurales, patients chroniques</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">2-3 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="médicament rappel traitement">
+                    <div class="project-title">2. 💊 Distributeur Intelligent de Médicaments</div>
+                    <div class="project-description">
+                        Boîtier connecté qui rappelle aux patients de prendre leurs médicaments, vérifie les dosages et alerte les proches en cas d'oubli. Crucial pour l'observance thérapeutique des maladies chroniques.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">Arduino Nano 33 IoT, Servo moteurs, Capteurs de poids, OLED, Buzzer</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$40-60 par unité</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Diabétiques, hypertendus, personnes âgées</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">3-4 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="vaccin température chaîne froid">
+                    <div class="project-title">3. 🧊 Monitoring Chaîne du Froid pour Vaccins</div>
+                    <div class="project-description">
+                        Système de surveillance automatique de la température des réfrigérateurs de vaccins dans les centres de santé, avec alertes temps réel en cas de rupture de la chaîne du froid.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">ESP32, DS18B20 étanche, SIM800L, Relais, Batterie backup</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$25-35 par unité</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Centres de vaccination, OMS, gouvernements</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">1-2 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="microscope diagnostic paludisme tuberculose">
+                    <div class="project-title">4. 🔬 Microscope Portable Connecté</div>
+                    <div class="project-description">
+                        Dispositif d'imagerie médicale portable pour diagnostic du paludisme, tuberculose et autres maladies, avec analyse d'image automatisée par IA et transmission vers spécialistes distants.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">Raspberry Pi 4, Caméra haute résolution, Lentilles optiques, LED, SIM7600</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$150-250 par unité</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Laboratoires ruraux, cliniques mobiles</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">6-8 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="chute détection personne âgée">
+                    <div class="project-title">5. 🚨 Détecteur de Chutes pour Personnes Âgées</div>
+                    <div class="project-description">
+                        Bracelet ou pendentif connecté qui détecte automatiquement les chutes et alerte immédiatement les proches ou services de secours avec géolocalisation.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">ESP32, MPU6050, GPS NEO-6M, SIM800L, Batterie LiPo, Bouton panique</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$30-45 par unité</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Personnes âgées, familles, maisons de retraite</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">2-3 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="test rapide hiv paludisme covid connecté">
+                    <div class="project-title">6. 🧪 Tests Rapides Connectés</div>
+                    <div class="project-description">
+                        Lecteur automatique de tests rapides (VIH, paludisme, COVID) avec analyse d'image, stockage sécurisé des résultats et transmission aux autorités sanitaires.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">ESP32-CAM, Éclairage LED, Lentille macro, Module crypto, SIM800L</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$60-80 par unité</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Centres de dépistage, ONG, ministères santé</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">4-6 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="équipement localisation hôpital rfid">
+                    <div class="project-title">7. 📍 Localisation d'Équipements Médicaux</div>
+                    <div class="project-description">
+                        Système de géolocalisation temps réel des équipements critiques dans les hôpitaux (défibrillateurs, ventilateurs, lits) pour optimiser leur utilisation et réduire les pertes.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">ESP32, Beacons BLE, Tags RFID, Interface web, Base données</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$15-25 par tag</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Hôpitaux, cliniques privées</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">3-4 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="air qualité infection nosocomiale">
+                    <div class="project-title">8. 🌬️ Monitoring Qualité de l'Air Médical</div>
+                    <div class="project-description">
+                        Réseau de capteurs pour surveiller la qualité de l'air dans les établissements de santé (CO2, particules, COV) pour prévenir les infections nosocomiales et optimiser la ventilation.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">ESP32, MQ135, SDS011, SHT30, LoRa, Dashboard web</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$45-65 par capteur</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Hôpitaux, blocs opératoires, EHPAD</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">2-3 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="télémédecine consultation stethoscope">
+                    <div class="project-title">9. 👩‍⚕️ Kit de Télémédecine Portable</div>
+                    <div class="project-description">
+                        Mallette connectée contenant stéthoscope digital, otoscope, thermomètre et caméra pour consultations médicales à distance en haute qualité avec transmission temps réel.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">Raspberry Pi 4, Caméra 4K, Micro haute qualité, Stéthoscope digital, Écran tactile</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                            <div class="detail-value">$300-500 par kit</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Médecins ruraux, ONG médicales, cliniques mobiles</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">6-8 mois</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-keywords="eau potable qualité contamination">
+                    <div class="project-title">10. 💧 Monitoring Qualité de l'Eau Potable</div>
+                    <div class="project-description">
+                        Système de surveillance continue de la qualité de l'eau dans les communautés (pH, turbidité, chlore résiduel, bactéries) avec alertes automatiques en cas de contamination.
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Composants Clés</div>
+                            <div class="detail-value">ESP32, Capteurs pH, TDS, Turbidité, Chlore, Panneau solaire, SIM800L</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Coût Estimé</div>
+                                                        <div class="detail-value">$80-120 par unité</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Marché Cible</div>
+                            <div class="detail-value">Communautés rurales, ONG, gouvernements locaux</div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Temps de Développement</div>
+                            <div class="detail-value">4-5 mois</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="download-btn" onclick="downloadAsExcel()">
+        📥 Télécharger Excel
+    </button>
+
+    <script>
+        function showTab(tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            document.getElementById(tabName).classList.add('active');
+            
+            event.target.classList.add('active');
+        }
+
+        function filterTable(input, tableId) {
+            const filter = input.value.toUpperCase();
+            const table = document.getElementById(tableId);
+            const rows = table.getElementsByTagName('tr');
+            
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                if (row.classList.contains('category-header')) continue;
+                
+                let shouldShow = false;
+                const cells = row.getElementsByTagName('td');
+                
+                for (let j = 0; j < cells.length; j++) {
+                    const cell = cells[j];
+                    if (cell.textContent.toUpperCase().indexOf(filter) > -1) {
+                        shouldShow = true;
+                        break;
+                    }
+                }
+                
+                row.style.display = shouldShow ? '' : 'none';
+            }
+        }
+
+        function filterProjects(input) {
+            const filter = input.value.toLowerCase();
+            const projects = document.querySelectorAll('.project-card');
+            
+            projects.forEach(project => {
+                const title = project.querySelector('.project-title').textContent.toLowerCase();
+                const description = project.querySelector('.project-description').textContent.toLowerCase();
+                const keywords = project.getAttribute('data-keywords') || '';
+                
+                const shouldShow = title.includes(filter) || 
+                                 description.includes(filter) || 
+                                 keywords.includes(filter);
+                
+                project.style.display = shouldShow ? 'block' : 'none';
+            });
+        }
+
+        function downloadAsExcel() {
+            let excelContent = `Catégorie,Composant,Description,Prix (USD),Fournisseur,Usage Principal
+MICROCONTRÔLEURS
+MCU,ESP32 DevKit,WiFi/Bluetooth 32-bit 240MHz,$8-12,AliExpress Mouser,Projets connectés
+MCU,Arduino Nano 33 IoT,WiFi intégré capteurs IMU,$18-25,Arduino Store,Prototypage rapide
+MCU,STM32L4 (ultra low power),ARM Cortex-M4 très faible conso,$5-15,ST Electronics,Dispositifs portables
+CAPTEURS MÉDICAUX
+Capteur,MAX30102,Oxymètre de pouls + rythme cardiaque,$6-10,Maxim AliExpress,Monitoring cardiaque
+Capteur,DS18B20,Température haute précision,$2-4,Dallas Semi,Température corporelle
+Capteur,MPU6050,Accéléromètre + Gyroscope 6-axis,$3-5,InvenSense,Détection chutes
+Capteur,HX711 + Load Cell,Balance de précision,$8-12,AliExpress,Monitoring poids
+Capteur,SHT30,Température/Humidité précise,$4-7,Sensirion,Conditions ambiantes
+CONNECTIVITÉ
+Comm,SIM800L (2G/GSM),Module cellulaire basique,$8-15,SIMCom,Zones rurales
+Comm,SIM7600 (4G/LTE),Module cellulaire haute vitesse,$25-40,SIMCom,Transmission données
+Comm,LoRa RFM95W,Longue portée faible puissance,$12-20,HopeRF,Réseau de capteurs
+Comm,HC-05 Bluetooth,Bluetooth Classic SPP,$3-6,AliExpress,Connexion locale
+ALIMENTATION
+Power,Batterie LiPo 3.7V,1000-5000mAh rechargeable,$5-15,Locaux,Alimentation portable
+Power,Module TP4056,Chargeur LiPo avec protection,$1-3,AliExpress,Charge sécurisée
+Power,Panneau solaire 5V,1-5W pour zones sans électricité,$8-25,Locaux,Autonomie énergétique
+INTERFACE UTILISATEUR
+Display,OLED 0.96" I2C,128x64 faible consommation,$4-8,AliExpress,Affichage compact
+Display,LCD 16x2,Affichage texte basique,$3-6,Local,Interface simple
+Interface,Buzzer actif,Alarmes sonores,$1-2,Local,Alertes audio
+
+PROJETS IOT MÉDICAUX
+
+Nom du Projet,Description,Composants Clés,Coût Estimé,Marché Cible,Temps Développement
+1. Monitoring Patient à Distance,Surveillance signes vitaux temps réel,ESP32 MAX30102 DS18B20 SIM800L Batterie LiPo,$80-120,Communautés rurales ONG gouvernements locaux,4-5 mois
+2. Distributeur Intelligent Médicaments,Rappels automatiques et vérification dosages,Arduino Nano 33 IoT Servo moteurs Capteurs poids OLED Buzzer,$40-60,Diabétiques hypertendus personnes âgées,3-4 mois
+3. Monitoring Chaîne du Froid Vaccins,Surveillance température réfrigérateurs vaccins,ESP32 DS18B20 étanche SIM800L Relais Batterie backup,$25-35,Centres vaccination OMS gouvernements,1-2 mois
+4. Microscope Portable Connecté,Diagnostic paludisme tuberculose avec IA,Raspberry Pi 4 Caméra haute résolution Lentilles LED SIM7600,$150-250,Laboratoires ruraux cliniques mobiles,6-8 mois
+5. Détecteur Chutes Personnes Âgées,Alerte automatique chutes avec géolocalisation,ESP32 MPU6050 GPS NEO-6M SIM800L Batterie LiPo,$30-45,Personnes âgées familles maisons retraite,2-3 mois
+6. Tests Rapides Connectés,Lecture automatique tests VIH paludisme COVID,ESP32-CAM Éclairage LED Lentille macro Module crypto SIM800L,$60-80,Centres dépistage ONG ministères santé,4-6 mois
+7. Localisation Équipements Médicaux,Géolocalisation temps réel équipements hôpital,ESP32 Beacons BLE Tags RFID Interface web Base données,$15-25,Hôpitaux cliniques privées,3-4 mois
+8. Monitoring Qualité Air Médical,Surveillance air pour prévenir infections nosocomiales,ESP32 MQ135 SDS011 SHT30 LoRa Dashboard web,$45-65,Hôpitaux blocs opératoires EHPAD,2-3 mois
+9. Kit Télémédecine Portable,Consultations médicales distance haute qualité,Raspberry Pi 4 Caméra 4K Micro Stéthoscope digital Écran tactile,$300-500,Médecins ruraux ONG cliniques mobiles,6-8 mois
+10. Monitoring Qualité Eau Potable,Surveillance continue qualité eau communautés,ESP32 Capteurs pH TDS Turbidité Chlore Panneau solaire SIM800L,$80-120,Communautés rurales ONG gouvernements locaux,4-5 mois`;
+
+            const blob = new Blob([excelContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'IoT_Medical_Africa_Components_Projects.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            alert('📥 Fichier téléchargé avec succès!\n\nLe fichier CSV peut être ouvert dans Excel, Google Sheets ou LibreOffice Calc.');
+        }
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

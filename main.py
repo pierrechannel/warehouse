@@ -25,6 +25,9 @@ def main():
     global MQTT_USERNAME, MQTT_PASSWORD, MQTT_USE_TLS, MQTT_CA_CERTS
     global LIVESTREAM_FPS, LIVESTREAM_WIDTH, LIVESTREAM_HEIGHT
     
+    # Default MQTT credentials (can be overridden by config.py or command line)
+   
+    
     parser = argparse.ArgumentParser(description='Optimized Door Control System with Face Detection and HiveMQ MQTT Streaming')
     parser.add_argument('--manual', action='store_true', 
                        help='Run in manual mode (button triggered)')
@@ -61,10 +64,10 @@ def main():
                        help='HiveMQ broker port (default: 8883 for TLS)')
     parser.add_argument('--mqtt-topic', default=MQTT_TOPIC,
                        help='MQTT topic for streaming (default: door/stream)')
-    parser.add_argument('--mqtt-username', default=MQTT_USERNAME,
-                       help='HiveMQ broker username')
-    parser.add_argument('--mqtt-password', default=MQTT_PASSWORD,
-                       help='HiveMQ broker password')
+    parser.add_argument('--mqtt-username', default=MQTT_USERNAME if hasattr(globals(), 'MQTT_USERNAME') and MQTT_USERNAME else DEFAULT_MQTT_USERNAME,
+                       help='HiveMQ broker username (default: default_user)')
+    parser.add_argument('--mqtt-password', default=MQTT_PASSWORD if hasattr(globals(), 'MQTT_PASSWORD') and MQTT_PASSWORD else DEFAULT_MQTT_PASSWORD,
+                       help='HiveMQ broker password (default: default_password)')
     parser.add_argument('--mqtt-use-tls', action='store_true', default=MQTT_USE_TLS,
                        help='Enable TLS for MQTT connection (default: True)')
     parser.add_argument('--mqtt-ca-certs', default=MQTT_CA_CERTS,
