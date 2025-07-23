@@ -6,6 +6,8 @@ from threading import Thread, Event
 import paho.mqtt.client as mqtt
 import ssl
 from config import *
+from text_to_speech import TextToSpeech as tts
+import uuid
 
 logger = logging.getLogger(__name__)
 
